@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+</head>
+<body>
+    <div class="wraper-main-detail">
+        <div class="container-fluid">
+            <div class="px-3">
+                <div class="row page-heading-row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="page-heading">Paid Claim Reports</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shadow-border shadow-border_ER bg-light mb-4">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">Year</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <select name="year" id="year" class="form-control" style="width:200px">
+                                    </select>
+                                    @*@Html.DropDownList("linktoYearId", null, "--Select--", new { @id = "ddlYears", @onChange = "return ChangeYear(this)", @class = "form-control", style = "width:200px" })*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">Month</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <select name="year" id="month" class="form-control" style="width:200px">
+                                    </select>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">Emp Id</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtid" style="width:200px" class="form-control" placeholder="Employee Id" readonly="readonly" value="@ViewBag.empid" />
+                                    @*<asp:TextBox ID="txtid" class="form-control" placeholder="Employee Id" runat="server" ReadOnly="true"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">Emp Name</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right" style="width:200px">
+                                    <input type="text" id="txtempname" style="width:200px" class="form-control" placeholder="Employee Name" readonly="readonly" value="@ViewBag.user" />
+                                    @*<asp:TextBox ID="txtempname" class="form-control" placeholder="Employee Name" runat="server" ReadOnly="true"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">Prev Outstanding</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtOutstanding" style="width:200px" class="form-control" placeholder="Outstanding" readonly="readonly" value="Outstanding" />
+                                    @*<asp:TextBox ID="txtOutstanding" class="form-control" placeholder="Outstanding" runat="server"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="col-lg-6" align="right">
+                                <span class="input-group-text" style="width:200px">As on Outstanding</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtasOutstanding" style="width:200px" class="form-control" placeholder="Outstanding" readonly="readonly" value="Outstanding" />
+                                    @*<asp:TextBox ID="txtasOutstanding" class="form-control" placeholder="Outstanding" runat="server"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-left:40px;">
+                            @*<input type="button" ID="btnFetchData" class="btn btn-sm btn-dark" value="Fetch Data" />*@
+                            <button id="btnFetchData" class="btn btn-sm btn-dark">Fetch Data</button>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right">
+
+                            <button class="btn btn-sm btn-dark" onclick="return checkValidations()">Submit</button>
+                            @*<asp:Button ID="btnclear" class="btn btn-sm btn-dark" runat="server" Text="Clear All" />
+                            <asp:Button ID="btnExit" class="btn btn-sm btn-dark" runat="server" Text="Exit" />*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-box InfraTableWraper">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table id="tblclaimTable" class="table table-bordered mb-0 table-striped infraTable" width="100" >
+                                <thead class="bg-light table-sm">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>EmpId</th>
+                                        <th>Claim Type</th>
+                                        <th>Claim Subtype</th>
+                                        <th>Claim Date</th>
+                                        <th>Claim Amt.</th>
+                                        <th>KM IN</th>
+                                        <th>KM OUT</th>
+                                        <th>Remarks</th>
+                                        <th>Claim Status</th>
+                                        <th>Manager Status</th>
+                                        <th>RM Status</th>
+                                        <th>Account Status</th>
+                                        <th>Image</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="claimTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @section layoutjs
+        {
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="~/js/datatable/jquery.datatables.js"></script>
+        <script src="~/js/datatable/jquery.datatables.min.js"></script>
+        <script src="~/js/reimbursement/paidreport.js"></script>
+    }
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,318 @@
+﻿@{
+    ViewBag.Title = "Leave";
+}
+
+<link href="~/css/datatable/jquery.datatables.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.min.css" rel="stylesheet" />
+@*<link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />*@
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />
+
+
+
+<style>
+    .ui-datepicker {
+        z-index: 9999 !important;
+    }
+
+    #manageLeaveModal .table.dataTable {
+        width: 100% !important;
+    }
+
+    select .wpcf7-form-control.wpcf7-select {
+        -webkit-appearance: menulist;
+    }
+</style>
+
+<!-- -----leave-modal----- -->
+<div class="modal fade" id="requestLeaveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request Leave</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModel();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Leave Name</span>
+                                </div>
+                                <select class="form-control form-select" list="datalistOptions" id="ddlleaveName">
+                                  
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                        <div class="input-group form-group pmInput input-group-sm">
+                            <input type="number" max="" value="" name="leavecount" class="quantity-field" id="leavecount" disabled />
+                            <input type="text" readonly="readonly" max="" value="" name="leaveTypeName" class="quantity-field" id="leaveTypeCount" />
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Date</span>
+                                </div>
+                                <input type="text" class="form-control" autocomplete="off" placeholder="From" name="" id="txtfromdate">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <input type="text" class="form-control" autocomplete="off" placeholder="To" name="" id="txttodate">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Reason</span>
+                                </div>
+                                <textarea type="text" placeholder="Reason For Leave" name="leaveTypeName" class="form-control" id="ddlreason"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Alternate Mobile No.</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Mobile" name="" id="txtaltmobile" onkeypress="return (event.charCode !=8 && event.charCode ==0 && event.charCode == 46 && event.charCode == 8 && event.charCode == 37 && event.charCode == 39 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Remarks</span>
+                                </div>
+                                <textarea class="form-control" placeholder="Remarks" id="txtremarks"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span id="validatemsg" class="text-success"></span>
+                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal" id="btncloseModal" onclick="closeModel()">Close</button>
+                <button type="button" class="btn btn-sm btn-success" id="btnSaveLeave">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="manageLeaveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" style="min-width:90%" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Leave Approval Status</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-dflt table-bordered table-striped table-sm" id="tblManageleaveHead">
+                    <thead>
+                        <tr>
+
+                            <th>EMP ID</th>
+                            <th>EMPNAME</th>
+                            <th>FROMDATE</th>
+                            <th>TODATE</th>
+                            <th>LEAVE TYPE</th>
+                            <th>COUNT</th>
+                            <th>CORDINATOR</th>
+                            <th>MANAGER</th>
+                            <th>HEAD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
+                @*<button type="button" class="btn btn-sm btn-success">Submit</button>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid main-wraper">
+    @{
+        //var userr = (Attendance.Domain.Models.Leave.LeaveStatus)TempData.Peek("mydataa");
+        var userr = @ViewBag.user;
+        <div class="shadow-box DB_Leave_box pb-0">
+            <div class="row mb-3">
+                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="leave-type-list">
+
+                        <li><span class="leave-count bg-warning text-white">@userr.TotalLeaves</span>Total Leaves</li>
+                        <li><span class="leave-count bg-success text-white">@userr.PL</span>Paid Leaves</li>
+                        <li><span class="leave-count bg-info text-white">@userr.CL</span>Casual Leaves</li>
+                        <li><span class="leave-count bg-dark text-white">@userr.SL</span>Sick Leaves</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 lRequestCol">
+                    <a class="btn btn-sm btn-info" id="btnRequestLeave">Request Leave</a>
+                    <a data-target="#manageLeaveModal" data-toggle="modal" class="btn btn-sm btn-info">Leave Approval Status</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="bg-white leave_Box rounded-lg shadow">
+                        <h2 class="h6 font-weight-bold text-center mb-4 bg-warning text-white p-2">Total Leaves</h2>
+
+                        <!-- Progress bar 1 -->
+                        <div class="progress mx-auto" data-value='80'>
+                            <span class="progress-left">
+                                <span class="progress-bar border-warning"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar border-warning"></span>
+                            </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 circle-leave-c font-weight-bold">@userr.TU<span class="count-devider text-warning">/</span>@userr.TotalLeaves</div>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <!-- Demo info -->
+                        <div class="row text-center mt-4">
+                            <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.TU</div><span class="used-leave-text text-gray">Used</span>
+                            </div>
+                            <div class="col-6">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.TR</div><span class="used-leave-text   text-gray">Balanced</span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="bg-white leave_Box rounded-lg shadow">
+                        <h2 class="h6 font-weight-bold text-center mb-4 bg-success text-white p-2">Paid Leaves</h2>
+
+                        <!-- Progress bar 1 -->
+                        <div class="progress mx-auto" data-value='80'>
+                            <span class="progress-left">
+                                <span class="progress-bar border-success"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar border-success"></span>
+                            </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 circle-leave-c font-weight-bold">@userr.UPL<span class="count-devider text-success">/</span>@userr.PL</div>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <!-- Demo info -->
+                        <div class="row text-center mt-4">
+                           <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.UPL</div><span class="used-leave-text   text-gray">Used</span>
+                            </div>
+                            <div class="col-6">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.RPL</div><span class="used-leave-text   text-gray">Balanced</span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="bg-white leave_Box rounded-lg shadow">
+                        <h2 class="h6 font-weight-bold text-center mb-4 bg-info text-white p-2">Casual Leaves</h2>
+
+                        <!-- Progress bar 1 -->
+                        <div class="progress mx-auto" data-value='80'>
+                            <span class="progress-left">
+                                <span class="progress-bar border-info"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar border-info"></span>
+                            </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 circle-leave-c font-weight-bold">@userr.UCL<span class="count-devider text-info">/</span>@userr.CL</div>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <!-- Demo info -->
+                        <div class="row text-center mt-4">
+                            <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.UCL</div><span class="used-leave-text   text-gray">Used</span>
+                            </div>
+                            <div class="col-6">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.RCL</div><span class="used-leave-text   text-gray">Balance</span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="bg-white leave_Box rounded-lg shadow">
+                        <h2 class="h6 font-weight-bold text-center mb-4 bg-dark text-white p-2">Sick Leaves</h2>
+
+                        <!-- Progress bar 1 -->
+                        <div class="progress mx-auto" data-value='80'>
+                            <span class="progress-left">
+                                <span class="progress-bar border-dark"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar border-dark"></span>
+                            </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 circle-leave-c font-weight-bold">@userr.USL<span class="count-devider text-dark">/</span>@userr.SL</div>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <!-- Demo info -->
+                        <div class="row text-center mt-4">
+                            <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.USL</div><span class="used-leave-text   text-gray">Used</span>
+                            </div>
+                            <div class="col-6">
+                                <div class="h4 font-weight-bold used-leave-number mb-0">@userr.RSL</div><span class="used-leave-text   text-gray">Balance</span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+@section layoutjs
+    {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/leave/leave.js"></script>
+
+
+}
+
+
+
+
+
+
+

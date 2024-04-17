@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "LeaveApproval";
+}
+
+
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />
+@{
+    var userr = @ViewBag.GetData;
+    if (userr != null)
+    {
+        <input type="hidden" value="@userr.Approvallevel" id="myHiddenVar" />
+
+    }
+}
+
+<div class="container-fluid">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Leave Approval</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" autocomplete="off" placeholder="From" name="" id="txtfromdate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" autocomplete="off" placeholder="To" name="" id="txttodate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <input type="button" class="btn btn-sm btn-orange" name="" value="Search" id="btnSearch" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table text-left table-dflt table-bordered table-striped table-sm" id="tblLeaveapproval">
+                            <thead>
+                                <tr>
+                                    <th>Sr No.</th>
+                                    <th>Emp Id</th>
+                                    <th>Emp Name</th>
+                                    <th>From Date</th>
+                                    <th>Todate</th>
+                                    <th>Apply Date</th>
+                                    <th>Count</th>
+                                    <th>LeaveType</th>
+                                    <th>Reasons</th>
+                                    @*<th>Apply date</th>*@
+                                     @*@if (userr.Approvallevel == 2)
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Cordinator
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" id="ckbCheckAll" />
+                                    </label>
+                                    </th>
+                                    }
+                                    else
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Cordinator
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" disabled id="ckbCheckAll" />
+                                    </label>
+                                    </th>
+                                    }*@
+
+                                    @if (userr.Approvallevel == 3)
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Manager
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" id="ckbCheckAllOne" />
+                                    </label>
+                                    </th>
+                                    }
+                                    else
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Manager
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" disabled id="ckbCheckAllOne" />
+                                    </label>
+                                    </th>
+                                    }
+                                    @if (userr.Approvallevel == 4)
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Head
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" id="ckbCheckAllTwo" />
+                                    </label>
+                                    </th>
+                                    }
+                                    else
+                                    {
+                                    <th data-orderable="false">
+                                    <label class="d-block">
+                                    Head
+                                    <label for="ckbCheckAll">Select All</label>
+                                    <input type="checkbox" disabled id="ckbCheckAllTwo" />
+                                    </label>
+                                    </th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody id="leaveApprovalbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-12 text-right">
+            <span class="label label-success" id="msgSuccess"></span>
+            <span class="label label-danger" id="msgError"></span>
+            <button class="btn btn-sm btn-orange" id="btnLeaveapproval">Submit</button>
+
+        </div>
+    </div>
+</div>
+
+@section layoutjs
+    {
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/leave/leave.js"></script>
+
+}

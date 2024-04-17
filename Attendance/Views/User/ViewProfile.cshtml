@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "ViewProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid main-wraper">
+    @{
+        //var userr = (Attendance.Domain.Models.UserDetail.UserProfile)TempData.Peek("mydata");
+        var userr = @ViewBag.user;
+        if (userr != null)
+        {
+            <div class="row mb-5">
+                <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="shadow-box dp_box p-0 h-100">
+                        <div class="dp_image_wraper text-center">
+                            <img src="~/Images/Dashboard/pp.jpg" class="img-fluid dp_image">
+                            <i class="fa fa-pencil btn-sm text-success btn-light"></i>
+                        </div>
+                        <div class="employees">@userr.EMP_Full_Name</div>
+                        <div class="table-responsive">
+                            <table>
+                                <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <strong>Designation:</strong>
+                                        </td>
+
+                                        <td>@userr.Designation</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Employee Id:</strong></td>
+                                        <td>@userr.EMP_ID</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12 pInfoCol">
+                    <div class="shadow-box dp_box p-0 h-100">
+                        <div class="employees bg-blue text-white text-left pl-3">Personal Information</div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td width="20%"><strong>Date of Joining</strong></td>
+                                        <td>@userr.JoiningDate</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Office Email</strong></td>
+                                        <td>@userr.OfficialMail</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Personal Email</strong>
+                                        </td>
+                                        <td>@userr.PersonalEmail<i class="edit-btn fa fa-pencil btn btn-sm"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Office Phone</strong>
+                                        </td>
+                                        <td>
+                                            @userr.ContactNo
+                                        </td>
+                                    <tr>
+                                        <td><strong>Personal phone no.</strong></td>
+                                        <td>@userr.ContactNo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Alternate Phone No.</strong>
+                                        </td>
+                                        <td>
+                                                @userr.EmergencyContNo
+                                            <i class="edit-btn fa fa-pencil btn btn-sm"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Address</strong></td>
+                                        <td>
+                                        <td style="white-space:unset;">@userr.CurrentAddress</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        }
+    }
+</div>

@@ -1,0 +1,99 @@
+﻿@model Attendance.Domain.Models.DropDownModel.Countries
+@{
+    ViewData["Title"] = "AttendanceDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+@*<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />*@
+
+<div class="container-fluid main-wraper">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Attendance Details</h5>
+        <div class="p-2">
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="From" autocomplete="off" name="" id="txtfromdate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="To" autocomplete="off" name="" id="txttodate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-group form-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Country</span>
+                        </div>
+                        @Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.Countrylst, "CountryID", "Country"), "Select Country", new { @Class = "form-control w-75" })
+                        @*  <select id="ddlCountry" name="ddlcoutry" class="form-control form-control-sm"></select>*@
+                    </div>
+                </div>
+                @*<div class="col-3">
+                <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                <span class="input-group-text">Emp id</span>
+                </div>
+                <input type="text" id="txtemp" class="form-control" />
+                </div>
+                </div>*@
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input type="button" class="btn btn-orange btn-sm" value="Search" name="" id="btnsearch">
+                    <button class="btn btn-orange btn-sm" id="btndetailExport">ExportToExcel</button>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                    @*<a href="/Attendance/AttendanceRegularization" class="btn btn-sm btn-orange">Regularization</a>*@
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table id="tblAttendancedtl" class="table table-dflt table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>EMPID</th>
+                                    <th>EMPNAME</th>
+                                    <th>DATE</th>
+                                    <th>INTIME</th>
+                                    <th>OUTTIME</th>
+                                    <th>INDISTANCE</th>
+                                    <th>OUTDISTANCE</th>
+                                    <th>Country</th>
+                                    <th>CORDINATOR</th>
+                                    <th>MANAGER</th>
+                                    <th>HEAD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section layoutjs
+    {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="~/js/datatable/jquery.datatables.js"></script>
+    <script src="~/js/datatable/jquery.datatables.min.js"></script>
+    <script src="~/js/Dashboard/Attendance/AttendanceDetail.js"></script>
+
+
+}
+

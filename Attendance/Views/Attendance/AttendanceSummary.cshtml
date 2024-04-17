@@ -1,0 +1,77 @@
+﻿@model Attendance.Domain.Models.DropDownModel.Countries
+@{
+    ViewData["Title"] = "AttendanceSummary";
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<link href="~/js/datetimepick/datetimepicker.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+@*<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />*@
+
+<div class="container-fluid atndncSmry">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Attendance Summary</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-group form-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Country</span>
+                        </div>
+                        
+                             @Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.Countrylst, "CountryID", "Country"), "Select Country", new { @Class = "form-control w-75" })                       
+
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-group form-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="From" autocomplete="off" name="" id="txtfromdate">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left">
+                    <button type="button"  class="btn btn-info btn-sm mr-2" id="btnSearch">Search</button>
+                    <button type="button" value="ExportToExcel" id="btnexport" class="btn btn-orange btn-sm">EcxportToExcel</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <div class="table-responsive">
+                        <table id="tblAttSummary" class="table table-dflt table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>EMPID</th>
+                                    <th>Full Name</th>
+                                    <th>Calendar Days</th>
+                                    <th>Present</th>
+                                    <th>Leave</th>
+                                    <th>Absent</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ @section layoutjs
+    {
+    <script src="~/js/datetimepick/datetimepicker.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="~/js/datatable/jquery.datatables.js"></script>
+    <script src="~/js/datatable/jquery.datatables.min.js"></script>
+    <script src="~/js/Dashboard/Attendance/AttendanceSummary.js"></script>
+
+ }

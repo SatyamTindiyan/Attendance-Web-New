@@ -1,0 +1,134 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Expletus Sans', cursive;
+}
+
+.main-bg {
+    background-color: #5e07b3;
+}
+
+.lq-logo {
+    max-width: 40px;
+}
+
+.bg-theme {
+    background-color: #5e07b3;
+}
+
+.text-theme {
+    color: #5e07b3;
+}
+
+.Center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-box-left {
+    padding: 20px;
+}
+
+.login-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #5e07b3;
+}
+
+.login-part4 {
+    background-color: white;
+    border: 3px solid #fb9905;
+    border-right: 0px;
+    position: relative;
+}
+
+    .login-part4::before {
+        position: absolute;
+        content: '';
+        top: -3px;
+        left: 100%;
+        height: 3px;
+        width: 3px;
+        background-color: #fb9905;
+        z-index: 99;
+    }
+
+    .login-part4::after {
+        position: absolute;
+        content: '';
+        bottom: -3px;
+        left: 100%;
+        height: 3px;
+        width: 3px;
+        background-color: #fb9905;
+        z-index: 99;
+    }
+
+.column8 {
+    background-image: url('~/Content/Images/a.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(191, 63, 191);
+    border: 3px solid #fff;
+}
+
+.format {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+    .format a {
+        color: #800ed4;
+        font-size: 14px;
+    }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+    .centered h2 {
+        font-weight: bold;
+    }
+
+.button10 input {
+    border: 1px solid;
+    background-color: #5e07b3;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #e9f4fb;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+    padding: 5px 35px;
+}
+
+.imagelogo img {
+}
+
+.form-control-text {
+    width: 100%;
+    display: block;
+}
+
+    .form-control-text:focus {
+        box-shadow: none !important;
+        outline: 0px;
+        border-color: #5e07b3;
+    }
+
+.login-control {
+    padding: 20px;
+    color: #B16BE4;
+    line-height: 1.5;
+}
+
+.login-checkbox {
+}

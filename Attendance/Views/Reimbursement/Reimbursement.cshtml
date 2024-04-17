@@ -1,0 +1,430 @@
+﻿@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Reimbursement</title>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" />
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <style>
+        center {
+            margin: 50px auto 0 auto;
+            display: block;
+            float: none;
+        }
+
+        .icon-up {
+            background-image: url('data:image/svg+xml,<svg viewBox="0 0 256 256" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M217.6 179.2c-1.637 0-3.274-.625-4.524-1.875L128 92.25l-85.075 85.075c-2.5 2.5-6.55 2.5-9.05 0s-2.5-6.55 0-9.05l89.6-89.6c2.5-2.5 6.55-2.5 9.05 0l89.6 89.6c2.5 2.5 2.5 6.55 0 9.05-1.25 1.25-2.888 1.875-4.525 1.875z" fill="currentColor"/></svg>');
+        }
+
+        .icon-down {
+            background-image: url('data:image/svg+xml,<svg viewBox="0 0 256 256" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M217.6 179.2c-1.637 0-3.274-.625-4.524-1.875L128 92.25l-85.075 85.075c-2.5 2.5-6.55 2.5-9.05 0s-2.5-6.55 0-9.05l89.6-89.6c2.5-2.5 6.55-2.5 9.05 0l89.6 89.6c2.5 2.5 2.5 6.55 0 9.05-1.25 1.25-2.888 1.875-4.525 1.875z" fill="currentColor"/></svg>');
+            transform: rotate(180deg);
+        }
+
+        .dtBox {
+        }
+
+        .btnGrey {
+            cursor: pointer !important;
+        }
+
+        .ms-options {
+            width: 150px !important;
+        }
+
+        .error {
+            border: 2px solid red !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="modal confirmation-popup C-popup-success fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-check confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txt" class="confirmation-popup-msg">Success</h5>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="succ" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal confirmation-popup C-popup-danger fade" id="dangerModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-close confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txterror" class="confirmation-popup-msg">Error</h5>
+
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal confirmation-popup C-popup-warning fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-exclamation-triangle confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txtwar" class="confirmation-popup-msg">Warning</h5>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                        <div class="form-group text-center mb-0">
+                            <div class="row text-danger m-0 mb-3" id="divMessage" style="width:400px;">
+                            </div>
+                            <span id="spanMessage" class="text-success"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="master-toggle" tabindex="-1" role="dialog" aria-labelledby="masterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content master-popup-content">
+                <div class="modal-header master-popup-header">
+                    <h5 class="modal-title" id="masterModalLabel">Role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body master-popup-body">
+                    <form action="" class="popup-form">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="label-dflt">Role Name</label>
+                                    <input type="text" required placeholder="Role name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="label-dflt">Role Code</label>
+                                    <input type="text" required placeholder="Role code" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label class="label-dflt">Remarks</label>
+                                    <textarea name="" id="" rows="3" required class="form-control" placeholder="Remarks"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group text-right mb-0">
+                                    <button type="button" class="btn btn-info btnGrey">Save</button>
+                                    <button type="button" class="btn btn-danger btnGrey" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer master-popup-footer">
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="wraper-main-detail">
+        <div class="container-fluid">
+            <div class="px-3">
+                <div class="row page-heading-row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="page-heading">Employee Reimbursement And Claim Details</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-border shadow-border_ER bg-light mb-4">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">Year</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <select name="year" id="year" class="form-control" style="width:200px">
+                                    </select>
+                                    @*@Html.DropDownList("linktoYearId", null, "--Select--", new { @id = "ddlYears", @onChange = "return ChangeYear(this)", @class = "form-control", style = "width:200px" })*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">Month</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <select name="month" id="month" class="form-control" style="width:200px">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @*   <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                    <div class="form-group input-group input-group-sm">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" style="width:200px">Year</span>
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-6" align="right">
+                    <select name="year" id="year" class="form-control" style="width:200px">
+                    </select>
+                    @Html.DropDownList("linktoYearId", null, "--Select--", new { @id = "ddlYears", @onChange = "return ChangeYear(this)", @class = "form-control", style = "width:200px" })
+                    </div>
+                    </div>
+                    </div>
+                    </div>*@
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">Emp Id</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtid" style="width:200px" class="form-control" placeholder="Employee Id" readonly="readonly" value="@ViewBag.empid" />
+                                    @*<asp:TextBox ID="txtid" class="form-control" placeholder="Employee Id" runat="server" ReadOnly="true"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">Emp Name</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right" style="width:200px">
+                                    <input type="text" id="txtempname" style="width:200px" class="form-control" placeholder="Employee Name" readonly="readonly" value="@ViewBag.user" />
+                                    @*<asp:TextBox ID="txtempname" class="form-control" placeholder="Employee Name" runat="server" ReadOnly="true"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">Prev Outstanding</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtOutstanding" style="width:200px" class="form-control" placeholder="Outstanding" readonly="readonly" value="Outstanding" />
+                                    @*<asp:TextBox ID="txtOutstanding" class="form-control" placeholder="Outstanding" runat="server"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="form-group input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:200px">As on Outstanding</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6" align="right">
+                                    <input type="text" id="txtasOutstanding" style="width:200px" class="form-control" placeholder="Outstanding" readonly="readonly" value="Outstanding" />
+                                    @*<asp:TextBox ID="txtasOutstanding" class="form-control" placeholder="Outstanding" runat="server"></asp:TextBox>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">   
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="margin-left:25px;">
+                            <button class="btn btn-sm btn-dark" onclick="return checkValidations()">Submit</button>
+                            <input type="button" ID="btnExit" class="btn btn-sm btn-dark" value="ClearAll" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="search-strip_2">
+                        <div class="input-group input-group-sm">
+                            <input type="text" id="searchData" class="form-control" placeholder="Search here..." name="">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table id="tblReimbursement" class="table table-sm table-hover table_ER text-center mb-0 table-bordered">
+                            <thead class="table-light-head" style="color:white; background-color: #212529 ">
+                                <tr>
+                                    <th>Sr. No.</th>
+                                    <th>Claim Type</th>
+                                    <th>Claim Subtype</th>
+                                    <th>Invoice Date</th>
+                                    <th>Claim Amt.</th>
+                                    <th>KM IN</th>
+                                    <th>KM OUT</th>
+                                    <th>Remarks</th>
+                                    @* <th>Claim Status</th>*@
+
+                                    <th>Upload</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyReimbursement">
+                            </tbody>
+                            <tfoot>
+                                <tr id="tfooter" style="display: none;">
+                                    <th colspan="4" class="text-right">Total</th>
+                                    <th class="p-0">
+                                        <input type="text" id="txtTotal" class="form-control bg-warning-light text-dark rounded-0" placeholder="00" name="">
+                                    </th>
+                                    <th colspan="6"></th>
+
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right mt-2">
+                        <button class="btn btn-sm btnGrey" id="btnAddMore" style="text-align: right; background-color: #828282">+ Add More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                    <div class="form-group text-center mb-0">
+                        <div class="row text-danger m-0 mb-3" id="divMessage">
+                        </div>
+                        <input type="hidden" id="hfBase64" name="base64Image" />
+
+                        <span id="spanMessage" class="text-success"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal confirmation-popup C-popup-success fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-check confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" id="btnclose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txt" class="confirmation-popup-msg">Success</h5>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="succ" class="btn confirmation-popup-btn abc" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal confirmation-popup C-popup-danger fade" id="dangerModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-close confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txterror" class="confirmation-popup-msg">Error</h5>
+
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal confirmation-popup C-popup-warning fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-exclamation-triangle confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txtwar" class="confirmation-popup-msg">Warning</h5>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                        <div class="form-group text-center mb-0">
+                            <div class="row text-danger m-0 mb-3" id="divMessage" style="width:400px;">
+                            </div>
+                            <span id="spanMessage" class="text-success"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function ChangeYear(obj) {
+            debugger;
+            window.location.href = '@Url.Action("Reimbursement", "Reimbursement")?Year=' + obj.value;
+        }
+    </script>
+
+    <script>
+        // Get a reference to the button element
+        const btnExit = document.getElementById("btnExit");
+
+        // Add a click event listener to the button
+        btnExit.addEventListener("click", function () {
+
+            window.location.reload();
+        });
+    </script>
+    @section layoutjs
+        {
+        <script src="~/js/datetimepick/datetimepicker.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="~/js/reimbursement/reimbursement.js"></script>
+    }
+</body>
+</html>

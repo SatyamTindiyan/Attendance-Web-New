@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "InfraDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/datatable/jquery.datatables.css" rel="stylesheet" />
+<link href="~/css/datatable/jquery.datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+
+<div class="container-fluid main-wraper">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Infra Issue Details</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table id="tblInfrareport" class="table table-dflt table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>EMPID</th>
+                                    <th>EMPNAME</th>
+                                    <th>LOCATION</th>
+                                    <th>SERIALNO</th>
+                                    <th>SERVICETAG</th>
+                                    <th>MODALNO</th>
+                                    <th>INFRAGROUP</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section layoutjs
+    {
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="~/js/datatable/jquery.datatables.js"></script>
+    <script src="~/js/datatable/jquery.datatables.min.js"></script>
+
+    <script src="~/js/Infra/infradetail.js"></script>
+}

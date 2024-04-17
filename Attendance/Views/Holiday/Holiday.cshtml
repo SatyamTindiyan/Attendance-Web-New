@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Attendance.Domain.Models.Holiday.Holidays>
+@{
+    ViewData["Title"] = "Holiday";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid main-wraper">
+    <div class="row">
+        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="shadow-box p-3">
+                <div class="table-responsive">
+                    <table class="table table-dark table-bordered holidayTable table-hover table-striped mb-0">
+                        <thead class="tableHdayBg">
+                            <tr>
+                                <th>Date</th>
+                                <th>Week Day</th>
+                                <th>Holiday Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>@item.HOLIDAY_DATE</td>
+                                    <td>@item.WEEKDAY</td>
+                                    <td>@item.HOLIDAY_DESC</td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

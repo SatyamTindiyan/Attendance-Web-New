@@ -1,0 +1,1409 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LQT676\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638198457947591081Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638198457947591081Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638198463026292069Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638198463026292069Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199313233559025Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199313233559025Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199318373326199Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199318373326199Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199325712846169Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199325712846169Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199327794233864Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199327794233864Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199331495418564Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199331495418564Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199336977124012Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199336977124012Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199338671787189Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199338671787189Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199339375221388Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199339375221388Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199340082321007Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199340082321007Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199342002709754Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199342002709754Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199348287855072Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199348287855072Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199350343819539Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199350343819539Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199351820066800Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199351820066800Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199353787822828Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199353787822828Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199354158033590Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199354158033590Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638199356529741879Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638199356529741879Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638200038196970362Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638200038196970362Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201063636185902Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201063636185902Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201080131864000Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201080131864000Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201094635288683Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201094635288683Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201153304589861Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201153304589861Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201166533559781Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201166533559781Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638201170946528200Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638201170946528200Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203477698735123Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203477698735123Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203504949514849Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203504949514849Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203567693806645Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203567693806645Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203581929836093Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203581929836093Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203587139957852Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203587139957852Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203638604308357Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203638604308357Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203643746033688Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203643746033688Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203670166948074Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203670166948074Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203677246689052Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203677246689052Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203679292329208Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203679292329208Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203679498328272Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203679498328272Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203679745019554Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203679745019554Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203679773983136Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203679773983136Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203679781633699Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203679781633699Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203681645470936Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203681645470936Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203690440303318Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203690440303318Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203714285816030Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203714285816030Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203721548110378Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203721548110378Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203732361368503Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203732361368503Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638203754441469571Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638203754441469571Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638204344921818697Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638204344921818697Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638204351974972754Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638204351974972754Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638205242271921457Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638205242271921457Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638205244257651204Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638205244257651204Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638205245211676980Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638205245211676980Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638205370787720855Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638205370787720855Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206124434643134Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206124434643134Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206128035685244Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206128035685244Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206142467846179Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206142467846179Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206147052801217Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206147052801217Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206148475945451Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206148475945451Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206149364435431Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206149364435431Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206238773737219Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206238773737219Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206239003483696Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206239003483696Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206239419232857Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206239419232857Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206240973277440Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206240973277440Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206241751799581Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206241751799581Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206253991302363Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206253991302363Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206256523879878Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206256523879878Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206256801089168Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206256801089168Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206259277723527Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206259277723527Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206259521672865Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206259521672865Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206259782593664Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206259782593664Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638206260006082146Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638206260006082146Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207840177268144Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207840177268144Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207840501196529Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207840501196529Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207843697301692Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207843697301692Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207844534107110Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207844534107110Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846151420354Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846151420354Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846265695318Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846265695318Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846355305076Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846355305076Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846549366353Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846549366353Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846652309622Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846652309622Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846738126328Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846738126328Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846826405738Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846826405738Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638207846959289560Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638207846959289560Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210467221498173Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210467221498173Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210467391232807Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210467391232807Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210467500341056Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210467500341056Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210467651174955Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210467651174955Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210468592681754Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210468592681754Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210468684200757Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210468684200757Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210468798559985Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210468798559985Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210468890226677Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210468890226677Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210468987572843Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210468987572843Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210469245964628Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210469245964628Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210469534286738Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210469534286738Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210544964635620Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210544964635620Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210545695699973Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210545695699973Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210546760311320Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210546760311320Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210548162708799Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210548162708799Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210550927166062Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210550927166062Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210552974604938Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210552974604938Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210554480541837Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210554480541837Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210555149928057Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210555149928057Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210594705531882Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210594705531882Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210596082610602Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210596082610602Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638210604182087248Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638210604182087248Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211245748504505Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211245748504505Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211246792744588Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211246792744588Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211250968394744Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211250968394744Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211258094728735Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211258094728735Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211261823999533Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211261823999533Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211262270833928Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211262270833928Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211264113850340Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211264113850340Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211265146399841Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211265146399841Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211280354817077Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211280354817077Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211380692983773Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211380692983773Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211386314460528Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211386314460528Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211387231818565Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211387231818565Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211389680368618Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211389680368618Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211402658713173Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211402658713173Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211428874750581Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211428874750581Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211429985623987Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211429985623987Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211432863321727Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211432863321727Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211452051794815Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211452051794815Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638211459863618120Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638211459863618120Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451451809004878Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451451809004878Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451452427316479Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451452427316479Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451455693847322Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451455693847322Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451458590902194Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451458590902194Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451460770714818Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451460770714818Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451469853385783Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451469853385783Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451470547580030Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451470547580030Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451470887943006Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451470887943006Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451493053253347Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451493053253347Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451494301685402Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451494301685402Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451499703415196Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451499703415196Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451509236462744Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451509236462744Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451509776573965Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451509776573965Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451509936176980Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451509936176980Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451511816875427Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451511816875427Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451512463687319Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451512463687319Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451513450259209Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451513450259209Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451534358614738Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451534358614738Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451536533857504Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451536533857504Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451536719520508Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451536719520508Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451537765358161Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451537765358161Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451537948356418Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451537948356418Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451539787322562Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451539787322562Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451541002501093Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451541002501093Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451541252110013Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451541252110013Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451587786762820Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451587786762820Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451594742202099Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451594742202099Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451595422995193Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451595422995193Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451600318731882Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451600318731882Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451601316704342Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451601316704342Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451601601637703Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451601601637703Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451603027468426Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451603027468426Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451605329222949Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451605329222949Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451609217002141Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451609217002141Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451620202896489Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451620202896489Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451623085981886Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451623085981886Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451630753098142Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451630753098142Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451631023989539Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451631023989539Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451631176584660Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451631176584660Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451632975245496Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451632975245496Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Excelfile\\638451634187259947Excelfile\\Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\Excelfile\\638451634187259947Excelfile\\Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\Images\\atlantis-logo-white.png",
+      "PackagePath": "staticwebassets\\Images\\atlantis-logo-white.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\css\\Datatable\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\css\\Datatable\\jquery.dataTables.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\css\\Datatable\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\css\\Datatable\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\AttendanceApproval.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\AttendanceApproval.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\AttendanceDetail.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\AttendanceDetail.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\AttendanceHistory.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\AttendanceHistory.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\AttendanceMark.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\AttendanceMark.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\AttendanceSummary.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\AttendanceSummary.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\FullCalendar.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\FullCalendar.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\Regulazation.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\Regulazation.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\RegulazationApproval.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\RegulazationApproval.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Dashboard\\Attendance\\paging.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Attendance\\paging.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Datatable\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\js\\Datatable\\jquery.dataTables.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Datatable\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\Datatable\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\DateTimePick\\DateTimePicker.css",
+      "PackagePath": "staticwebassets\\js\\DateTimePick\\DateTimePicker.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\DateTimePick\\DateTimePicker.js",
+      "PackagePath": "staticwebassets\\js\\DateTimePick\\DateTimePicker.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\DateTimePick\\Style.css",
+      "PackagePath": "staticwebassets\\js\\DateTimePick\\Style.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\DateTimePick\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\js\\DateTimePick\\jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\EngineerigTeamMapping\\EngineeringTeamMapping.js",
+      "PackagePath": "staticwebassets\\js\\EngineerigTeamMapping\\EngineeringTeamMapping.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Holiday\\Holiday.js",
+      "PackagePath": "staticwebassets\\js\\Holiday\\Holiday.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Holiday\\HolidayList.js",
+      "PackagePath": "staticwebassets\\js\\Holiday\\HolidayList.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Holiday\\masterholiday.js",
+      "PackagePath": "staticwebassets\\js\\Holiday\\masterholiday.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Infra\\Infra.js",
+      "PackagePath": "staticwebassets\\js\\Infra\\Infra.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Infra\\InfraDetail.js",
+      "PackagePath": "staticwebassets\\js\\Infra\\InfraDetail.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Leave\\Leave.js",
+      "PackagePath": "staticwebassets\\js\\Leave\\Leave.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Leave\\LeaveMaster.js",
+      "PackagePath": "staticwebassets\\js\\Leave\\LeaveMaster.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Leave\\LeaveReport.js",
+      "PackagePath": "staticwebassets\\js\\Leave\\LeaveReport.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\AccountReimbursement.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\AccountReimbursement.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\PaidReport.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\PaidReport.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\Reimbursement.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\Reimbursement.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\ReimbursementApproval.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\ReimbursementApproval.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\ReimbursementApprovalMobile.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\ReimbursementApprovalMobile.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\ReimbursementHeadApproval.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\ReimbursementHeadApproval.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\Reimbursement\\ReimbursementMobile.js",
+      "PackagePath": "staticwebassets\\js\\Reimbursement\\ReimbursementMobile.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\accordion.css",
+      "PackagePath": "staticwebassets\\themes\\base\\accordion.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\all.css",
+      "PackagePath": "staticwebassets\\themes\\base\\all.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\autocomplete.css",
+      "PackagePath": "staticwebassets\\themes\\base\\autocomplete.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\base.css",
+      "PackagePath": "staticwebassets\\themes\\base\\base.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\button.css",
+      "PackagePath": "staticwebassets\\themes\\base\\button.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\core.css",
+      "PackagePath": "staticwebassets\\themes\\base\\core.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\datepicker.css",
+      "PackagePath": "staticwebassets\\themes\\base\\datepicker.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\dialog.css",
+      "PackagePath": "staticwebassets\\themes\\base\\dialog.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\draggable.css",
+      "PackagePath": "staticwebassets\\themes\\base\\draggable.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_222222_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_222222_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_2e83ff_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_2e83ff_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_454545_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_454545_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_888888_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_888888_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_cd0a0a_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_cd0a0a_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.min.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\menu.css",
+      "PackagePath": "staticwebassets\\themes\\base\\menu.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\progressbar.css",
+      "PackagePath": "staticwebassets\\themes\\base\\progressbar.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\resizable.css",
+      "PackagePath": "staticwebassets\\themes\\base\\resizable.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\selectable.css",
+      "PackagePath": "staticwebassets\\themes\\base\\selectable.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\selectmenu.css",
+      "PackagePath": "staticwebassets\\themes\\base\\selectmenu.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\slider.css",
+      "PackagePath": "staticwebassets\\themes\\base\\slider.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\sortable.css",
+      "PackagePath": "staticwebassets\\themes\\base\\sortable.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\spinner.css",
+      "PackagePath": "staticwebassets\\themes\\base\\spinner.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\tabs.css",
+      "PackagePath": "staticwebassets\\themes\\base\\tabs.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\theme.css",
+      "PackagePath": "staticwebassets\\themes\\base\\theme.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\themes\\base\\tooltip.css",
+      "PackagePath": "staticwebassets\\themes\\base\\tooltip.css"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\uploadEmployeeExcel\\638482758990837031_InfraDetails.xlsx",
+      "PackagePath": "staticwebassets\\uploadEmployeeExcel\\638482758990837031_InfraDetails.xlsx"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\uploadEmployeeExcel\\638482767095810125_InfraDetails.xlsx",
+      "PackagePath": "staticwebassets\\uploadEmployeeExcel\\638482767095810125_InfraDetails.xlsx"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\uploadEmployeeExcel\\638482769058110174_InfraDetails.xlsx",
+      "PackagePath": "staticwebassets\\uploadEmployeeExcel\\638482769058110174_InfraDetails.xlsx"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\uploadEmployeeExcel\\638482774377071873_InfraDetails.xlsx",
+      "PackagePath": "staticwebassets\\uploadEmployeeExcel\\638482774377071873_InfraDetails.xlsx"
+    },
+    {
+      "Id": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\wwwroot\\uploadEmployeeExcel\\638482775999641244_InfraDetails.xlsx",
+      "PackagePath": "staticwebassets\\uploadEmployeeExcel\\638482775999641244_InfraDetails.xlsx"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Attendance.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Attendance.props",
+      "PackagePath": "build\\Attendance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Attendance.props",
+      "PackagePath": "buildMultiTargeting\\Attendance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Attendance.props",
+      "PackagePath": "buildTransitive\\Attendance.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

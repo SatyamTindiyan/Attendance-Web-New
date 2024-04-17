@@ -1,0 +1,270 @@
+﻿@{
+}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Employee Actual Claim Payout Details</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css" />
+<link href="~/js/DateTimePick/DateTimePicker.css" rel="stylesheet" />
+
+<style>
+    .tooltip-text {
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        color: black;
+        font-size: 14px;
+        background-color: #dfdfdf;
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid #999;
+        box-shadow: 1px 1px 4px #2a2a2a;
+    }
+
+    .hover-text:hover .tooltip-text {
+        visibility: visible;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    div.pager {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+        div.pager span {
+            display: inline-block;
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8;
+            text-align: center;
+            cursor: pointer;
+            background: #216aaf;
+            color: #fff;
+            margin-right: 0.5em;
+        }
+
+            div.pager span.active {
+                background: #e6f1fb;
+                color: #216aaf;
+            }
+
+    center {
+        margin: 50px auto 0 auto;
+        display: block;
+        float: none;
+    }
+
+    .icon-up {
+        background-image: url('data:image/svg+xml,<svg viewBox="0 0 256 256" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M217.6 179.2c-1.637 0-3.274-.625-4.524-1.875L128 92.25l-85.075 85.075c-2.5 2.5-6.55 2.5-9.05 0s-2.5-6.55 0-9.05l89.6-89.6c2.5-2.5 6.55-2.5 9.05 0l89.6 89.6c2.5 2.5 2.5 6.55 0 9.05-1.25 1.25-2.888 1.875-4.525 1.875z" fill="currentColor"/></svg>');
+    }
+
+    .icon-down {
+        background-image: url('data:image/svg+xml,<svg viewBox="0 0 256 256" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M217.6 179.2c-1.637 0-3.274-.625-4.524-1.875L128 92.25l-85.075 85.075c-2.5 2.5-6.55 2.5-9.05 0s-2.5-6.55 0-9.05l89.6-89.6c2.5-2.5 6.55-2.5 9.05 0l89.6 89.6c2.5 2.5 2.5 6.55 0 9.05-1.25 1.25-2.888 1.875-4.525 1.875z" fill="currentColor"/></svg>');
+        transform: rotate(180deg);
+    }
+
+    .dtBox {
+    }
+
+    .btnGrey {
+        cursor: pointer !important;
+    }
+
+    .ms-options {
+        width: 150px !important;
+    }
+
+    .error {
+        border: 2px solid red !important;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    #tblReimbursement th, #tblReimbursement td {
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="main-wraper container-fluid">
+    <div class="shadow-box infraFormWraper">
+        <div class="px-3">
+            <div class="row page-heading-row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="page-heading">Employee Reimbursement And Claim Details</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group input-group input-group-sm">
+                    <div class="input-group-prepend w-50">
+                        <span class="input-group-text w-100">Year</span>
+                    </div>
+                    <select name="year" id="year" class="form-control w-50">
+                    </select>
+
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group input-group input-group-sm">
+                    <div class="input-group-prepend w-50">
+                        <span class="input-group-text w-100">Month</span>
+
+                    </div>
+                    <select name="year" id="month" class="form-control w-50">
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group input-group input-group-sm">
+                    <div class="input-group-prepend w-50">
+                        <span class="input-group-text w-100">Emp Id</span>
+                    </div>
+                    <input type="text" id="txtid" class="form-control w-70" placeholder="Employee Id" readonly="readonly" value="" />
+                    <input type="hidden" id="Happrovallevel" value="@ViewBag.GetReimbursemnetData.Approvallevel" />
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <input type="button" ID="btnFetchDataHead" class="btn btn-sm btn-dark " value="Fetch Data" />
+                <input type="button" id="btnexportdata" onclick="exportData()" class="btn btn-sm btn-dark" value="Export" />
+                <input type="button" id="btnsubmitdata" class="btn btn-sm btn-dark" value="Submit" />
+                <input type="button" ID="btnclear" class="btn btn-sm btn-dark " value="Clear All" />
+                <input type="button" ID="btnExit" class="btn btn-sm btn-dark" value="Exit" />
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right">
+            </div>
+        </div>
+    </div>
+    <div class="shadow-box infraFormWraper">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="search-strip_2">
+                    <div class="input-group input-group-sm">
+                        <input type="text" id="searchData" class="form-control" placeholder="Search here..." name="">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="table-responsive">
+                    <table id="tblReimbursement" class="table table-sm table-hover table_ER text-center mb-0 table-bordered">
+                        <thead class="table-light-head" style="color:white; background-color: #212529 ">
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Emp Name</th>
+                                <th>Claim Type</th>
+                                <th>Claim Date</th>
+                                <th>Inv. Date</th>
+                                <th>Claim Amt.</th>
+                                <th>Revised Amt.</th>
+                                <th>Emp Remarks</th>
+                                <th>Manager Remarks</th>
+                                @if (ViewBag.GetReimbursemnetData.Approvallevel == 1)
+                                {
+                                    <th data-orderable="false">
+                                        <label class="m-0">
+                                            Status
+                                            <label for="ckbCheckAll">Approve</label>
+                                            <input type="checkbox" id="ckbCheckAllapprove" />
+                                            <label for="ckbCheckAll">Reject</label>
+                                            <input type="checkbox" id="ckbCheckAllreject" />
+                                        </label>
+                                    </th>
+                                }
+                                else
+                                {
+                                    <th data-orderable="false">
+                                        <label class="m-0">
+                                            Status
+                                            <label for="ckbCheckAll">Approve</label>
+                                            <input type="checkbox" id="ckbCheckAllapprove" />
+                                            <label for="ckbCheckAll">Reject</label>
+                                            <input type="checkbox" id="ckbCheckAllreject" />
+                                        </label>
+                                    </th>
+                                }
+                                @* <th>Invoice Date</th>*@
+                                <th>Verification Date</th>
+                                <th>Invoice Number</th>
+                                <th>TRN Number</th>
+                                <th>Invoice Amount</th>
+                                <th>Tax Amount</th>
+                                <th>Total Amount</th>
+                                <th>Credit of Tax</th>
+                                <th>Account Remarks</th>
+                                <th><i class="fa fa-download"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyReimbursement">
+                        </tbody>
+                        <tfoot>
+                            <tr id="tfooter" style="display: none;">
+                                <th colspan="4" class="text-right">Total</th>
+                                <th class="p-0">
+                                    <input type="text" id="txtTotal" class="form-control bg-warning-light text-dark rounded-0" placeholder="00" name="">
+                                </th>
+                                <th colspan="6"></th>
+
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+                @* <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right mt-2" style="display:none;">
+                <button class="btn btn-sm btnGrey" id="btnAddMore" style="text-align: right">+ Add More</button>
+                </div>*@
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                <div class="form-group text-center mb-0">
+                    <div class="text-danger m-0 mb-3" id="divMessage">
+                    </div>
+                    <span id="spanMessage" class="text-success"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6xuHJgdTh6DWM9GCnOjqkHzK9OCPrXNw&libraries=drawing,places" async></script>
+<link href="~/js/DateTimePick/jquery-1.11.0.min.js" rel="stylesheet" />
+<script>
+    // Get a reference to the button element
+    const btnExit = document.getElementById("btnExit");
+
+    // Add a click event listener to the button
+    btnExit.addEventListener("click", function () {
+      
+        window.location.reload();
+    });
+</script>
+
+@section layoutjs
+    {
+
+    <script src="~/js/datetimepick/datetimepicker.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/Reimbursement/AccountReimbursement.js"></script>
+    }

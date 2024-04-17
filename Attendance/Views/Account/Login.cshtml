@@ -1,0 +1,100 @@
+﻿@model Attendance.Domain.Models.UserDetail.VMUserDetail
+@{
+    ViewData["Title"] = "Login";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
+}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="~/Content/Images/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+@*<link href="~/Content/css/DashBoard/default.css" rel="stylesheet" type="text/css" />*@
+<link href="~/css/dashboard/default.css" rel="stylesheet" type="text/css"/>
+<link href="~/css/dashboard/media.css" rel="stylesheet" />
+@*<link href="~/Content/css/DashBoard/media.css" rel="stylesheet" />*@
+
+
+
+
+<div class="main-bg h-100">
+    <div class="container Center">
+        <div class="login-welcome-text text-center text-white">
+            <h2 class="mb-1">Linkquest Technology</h2>
+            <p class="">Login to access your admin account</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 login-part4">
+                <div class="login-box-left">
+                    <div class="imagelogo">
+                        <img src="~/images/10.jpg" class="lq-logo"/>
+                        @*<img src="~/Content/Images/10.jpg" class="lq-logo" />*@
+                    </div>
+
+                    <form class="login-form" id="loginfrm" method="post">
+                        <div class="form-group mb-4">
+                            <label class="mb-1">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text text-white bg-theme border border-dark">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control form-control-text", @placeHolder = "Enter email" })
+
+                            </div>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label class="mb-1">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text text-white bg-theme border border-dark">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control form-control-text", @placeHolder = "Password", @type = "password" })
+                            </div>
+                        </div>
+                        <div class="form-check login-checkbox">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                        </div>
+                        <div id="divMessage">
+                            <label id="lblmsg">@ViewBag.Message</label>
+                        </div>
+                        <div class="button10 text-right">
+                            <input type="submit" class="btn" value="Login" id="btnLogin" />
+                        </div>
+
+                    </form>
+                    <div class="format text-left">
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 column8">
+                <div class="container h-100">
+                    <div class="centered ">
+                        <h3 class="mb-3">Welcome To</h3>
+                        <h2 class="mb-3">Linkquest Technology</h2>
+                        <p>Login to access your admin account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+

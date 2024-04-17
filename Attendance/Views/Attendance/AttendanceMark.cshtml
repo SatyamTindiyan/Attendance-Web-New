@@ -1,0 +1,354 @@
+﻿@model Attendance.Domain.Models.Attendance.InoutTime
+@{
+    ViewData["Title"] = "AttendanceMark";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<style>
+    .ui-autocomplete {
+        z-index: 100 !important;
+    }
+</style>*@
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+@*<link href="~/css/style.css" rel="stylesheet" />*@
+@*<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6xuHJgdTh6DWM9GCnOjqkHzK9OCPrXNw&callback"></script>*@
+@*<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_Key"></script>*@
+
+
+<div class="container-fluid main-wraper">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue clearfix p-2 text-white">
+            Add Your Attendance
+            <span class="cLocationBox clearfix">
+                <span class="cLocation">
+                    <i class="fa fa-globe text-warning mr-1"></i>
+                    <strong>Lat, Lon :</strong>
+                    <input type="text" class="input-trasnparent" id="txtlat" disabled />-
+                    <input type="text" class="input-trasnparent" id="txtlang" disabled />
+                </span>
+                <span class="cLocation mr-4">
+                    <i class="fa fa-map-marker text-warning mr-1"></i>
+                    @*<strong class="mr-1"><span class="ml-1 addrs" id="ulocation"></span></strong>*@
+                    <strong></strong>
+                    <input type="text" class="input-trasnparent" id="ulocation" disabled />
+                </span>
+            </span>
+        </h5>
+        <div class="p-2">
+            <div class="row mb-3">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                    <span class="font-weight-bold">
+                        <input type="checkbox" id="onDuty" name="vehicle1" value="1">
+                        <label class="label-duty" for="vehicle1"> On Office Duty</label>
+                    </span>
+                    <a href="../Attendance/AttendanceHistory" class="btn btn-sm btn-info ml-3"><i class="fa fa-eye mr-1"></i>View Attendance History</a>
+                    <a href="../Infra/Infra" class="btn btn-sm btn-info ml-3"><i class="fa fa-eye mr-1"></i>Daily Infra</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <div class="atndnc_Mark_Box mb-3">
+                                <button class="btn btn-sm btn-danger" title="Click to Mark your Attendance In Time" id="btnAttInMark"><i class="fa fa-check mr-1"></i>InMark Time</button>
+
+                                <div class="input-group input-group-sm mt-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text font-weight-bold">InMark Time</span>
+                                    </div>
+                                    <input type="hidden" id="hdintime" name="hdintime" value="">
+                                    <input type="hidden" id="hdlocation" name="hdlocation" value="">
+                                    <input type="hidden" id="lat" name="hdlocation" value="">
+                                    <input type="hidden" id="lng" name="hdlocation" value="">
+
+                                    @if (@Model == null)
+                                    {
+                                        <label class="form-control font-weight-bold" value="" id="lblintime"></label>
+                                    }
+                                    else
+                                    {
+                                        //<label class="form-control font-weight-bold" value="@Model.INTIMEDB" id="lblintime">@Model.INTIMEDB</label>
+                                       // <label class="form-control font-weight-bold" value="" id="lblintime"></label>
+                                        <input type="text" id="lblintime" class="form-control font-weight-bold" disabled @*value="@Model.INTIMEDB"*@>
+                                    }
+                                </div>
+                            </div>
+                            <span id="spanSuccess" class="text-success"></span>
+                            <span id="spanError" class="text-danger"></span>
+                            @*}*@
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <div class="atndnc_Mark_Box mb-3">
+                                <button class="btn btn-sm btn-danger" title="Click to Mark your Attendance Out Time" id="btnAttOutMark"><i class="fa fa-check mr-1"></i>OutMark Time</button>
+                                <div class="input-group input-group-sm mt-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text font-weight-bold">OutMark Time</span>
+                                    </div>
+                                    @if (@Model == null)
+                                    {
+                                        <label class="form-control font-weight-bold" id="lblouttime"></label>
+                                    }
+                                    else
+                                    {
+                                        //<label class="form-control font-weight-bold" id="lblouttime">@Model.OUTTIMEDB</label>
+                                        <input type="text" id="lblouttime" class="form-control font-weight-bold" disabled @*value="@Model.INTIMEDB"*@>
+                                    }
+                                </div>
+                            </div>
+                            <span id="spanSuccessOut" class="text-success"></span>
+                            <span id="spanErrorOut" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 clearfix text-white">
+            Add Team Attendance
+            <span class="cLocationBox">
+                <span class="cLocation">
+                    <i class="fa fa-globe text-warning mr-1"></i>
+                    <strong>Lat, Lon :</strong>
+                    <input type="text" class="input-trasnparent" id="txtlat1" disabled />-
+                    <input type="text" class="input-trasnparent" id="txtlang1" disabled />
+                </span>
+                <span class="cLocation mr-4">
+                    <i class="fa fa-map-marker text-warning mr-1"></i>
+                    <input type="text" class="input-trasnparent" id="ulocation1" disabled />
+                </span>
+            </span>
+        </h5>
+        <div class="p-2">
+            <div class="row mb-3">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left">
+                    <span class="mr-3"><input type="radio" class="radioType" name="vendor" id="vendor" value="supplier"> Vendor</span>
+                    <span><input type="radio" class="radioType" name="vendor" id="employee1" value="employee"> Employee</span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4" id="vendor">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Vendor</span>
+                        </div>
+                        <input type="text" class="form-control" id="VendorID" placeholder="Vendor" name="">
+                        <input type="hidden" id="hiddenID" />
+                        <input type="hidden" id="hiddenIDaaa" />
+                    </div>
+                </div>
+                <div class="col-4" id="vendorname">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Employee name</span>
+                        </div>
+                        <input type="text" class="form-control" id="Vendorname" placeholder="Employee name" name="">
+                    </div>
+                </div>
+                <div class="col-4" id="employeeDiv">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Employee</span>
+                        </div>
+                        @*  <select class="form-control" id="ddlemployee"> </select>*@
+                        <input type="text" class="form-control" id="ddlemployee" placeholder="Employee" >
+                        <input type="hidden" id="hiddenemp">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    @*<div class="border bg-light p-2 mb-3 d-none">
+
+                    </div>*@
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <div class="atndnc_Mark_Box mb-3">
+                                <button class="btn btn-sm btn-danger" title="Click to Mark your Attendance In Time" id="btnTeamINMARK"><i class="fa fa-check mr-1"></i>InMark Time</button>
+                                <div class="input-group input-group-sm mt-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text font-weight-bold">InMark Time</span>
+                                    </div>
+                                    <input type="hidden" id="hdlocation1" name="hdlocation" value="">
+                                    <input type="hidden" id="hdTintime" name="hdintime" value="">
+                                    <input type="hidden" id="hdlocation" name="hdlocation" value="">
+                                    @if (@Model == null)
+                                    {
+                                        <label class="form-control font-weight-bold" value="" id="lblTeamintime"></label>
+                                    }
+                                    else
+                                    {
+                                        <label class="form-control font-weight-bold" value="" id="lblTeamintime"></label>
+                                    }
+
+                                </div>
+                            </div>
+                            <span id="spanSuccessteamIN" class="text-success"></span>
+                            <span id="spanErrorteamIN" class="text-danger"></span>
+                            <input type="hidden" id="hdteamOuttimeId" name="hdintime" value="">
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <div class="atndnc_Mark_Box mb-3">
+                                <button class="btn btn-sm btn-danger" title="Click to Mark your Attendance Out Time" disabled id="btnTeamOUTMARK"><i class="fa fa-check mr-1"></i>OutMark Time</button>
+                                <div class="input-group input-group-sm mt-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text font-weight-bold">OutMark Time</span>
+                                    </div>
+                                    @if (@Model == null)
+                                    {
+                                        <label class="form-control font-weight-bold" value="" id="lblTeamouttime"></label>
+                                    }
+                                    else
+                                    {
+                                        <label class="form-control font-weight-bold" value="" id="lblTeamouttime"></label>
+                                    }
+                                </div>
+                            </div>
+                            <span id="spanSuccessOUT" class="text-success"></span>
+                            <span id="spanErrorOUT" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0 bg-light p-3 border mt-3" id="tblvendordiv">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0" style="max-height:300px; overflow: auto;">
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0 small table-sm table-striped table-light infraTable" id="tblvendorth">
+                            <thead class="bg-secondary text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th hidden class="hiddenid">id</th>
+                                    <th hidden>Vendor id</th>
+                                    <th>Vendor</th>
+                                    <th>Employee</th>
+                                    <th>In Time</th>
+                                    <th>Out Time</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblvendor">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 bg-light p-3 border mt-3" id="tblemployeediv">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0" style="max-height:300px; overflow: auto;">
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0 small table-sm table-striped table-light infraTable" id="tblemployeeth">
+                            <thead class="bg-secondary text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th hidden class="hiddeneid">id</th>
+                                    <th hidden>Employee id</th>
+                                    <th>Empid</th>
+                                    <th>Employee Name</th>
+                                    <th>In Time</th>
+                                    <th>Out Time</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblemployee">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal confirmation-popup C-popup-success fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-check confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" id="btnclose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txt" class="confirmation-popup-msg">Success</h5>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="succ" class="btn confirmation-popup-btn abc" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal confirmation-popup C-popup-danger fade" id="dangerModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-close confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txterror" class="confirmation-popup-msg">Error</h5>
+                    
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal confirmation-popup C-popup-warning fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-exclamation-triangle confirmation-popup-icon" aria-hidden="true"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="txtwar" class="confirmation-popup-msg">Warning</h5>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                        <div class="form-group text-center mb-0">
+                            <div class="row text-danger m-0 mb-3" id="divMessage" style="width:400px;">
+                            </div>
+                            <span id="spanMessage" class="text-success"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button type="button" id="error" class="btn confirmation-popup-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section layoutjs
+    {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="~/js/Dashboard/Attendance/AttendanceMark.js"></script>
+    
+    <script type="text/javascript">
+        $("button[data-dismiss=modal]").click(function () {
+           
+                window.location.href = "../Attendance/AttendanceMark";
+            
+            $(".modal").modal('hide');
+            $("#msgerror").addClass('text-danger').html('');
+            $("#msgsuccess").addClass('text-danger').html('');
+            $('#successModal').on('hidden.bs.modal', function () {
+                location.reload();
+            });
+           
+        });
+    </script>
+    }
+
+
+

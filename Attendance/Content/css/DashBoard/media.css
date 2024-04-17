@@ -1,0 +1,371 @@
+﻿@media screen and (min-width: 240px) and (max-width: 768px) {
+    #main {
+        margin-left: 0px;
+        border-top: 4px solid #ef9c03;
+    }
+
+    #mySidenav {
+        display: none;
+    }
+
+    .mainSlide {
+        margin-left: 0px !important;
+    }
+
+    .NavbarTop .btn-orange {
+        float: right;
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .NavbarTop {
+        background-color: #05011c;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 9;
+        display: block;
+    }
+
+    .main-wraper {
+        margin-top: 15px;
+    }
+
+    .pBoxContainer {
+        margin-top: 43px !important;
+    }
+
+    .btn-attendance {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .profile-info .emp_Name {
+        border: 0px;
+        padding-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .DB_Profile_Contact {
+        border: 0px;
+        border-top: 1px solid #bababa;
+        padding-top: 15px;
+    }
+
+    .profile-info .emp_Desig {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+
+    .NavbarTop {
+        justify-content: flex-start !important;
+    }
+
+    .profile-img {
+        width: 22%;
+    }
+
+    .profile-info {
+        width: 78%;
+    }
+
+    .profile-card {
+        margin-bottom: 20px;
+    }
+
+    .DB_Profile_Contact-col {
+        padding-left: 15px !important;
+    }
+
+    .DB_Profile_Contact li {
+        padding-left: 0px;
+    }
+
+    .leave-type-list {
+        margin-bottom: 15px;
+    }
+
+    .leave_Box {
+        border: 1px solid #dddddd;
+        background-color: #efefef !important;
+    }
+
+    .leave-type-list li {
+        width: 49%;
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    .MobNav .nav-item:last-child {
+        border-bottom: 0px;
+    }
+
+    .DB_Event_box {
+        padding: 15px;
+        padding-bottom: 0px;
+    }
+
+    .MobNav .nav-item {
+        padding-left: 0px;
+        border-bottom: 1px solid #141128;
+    }
+
+    .navbar-toggler {
+        border: 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .main-bg {
+        padding: 30px;
+    }
+
+        .main-bg .Center {
+            padding: 0px 40px;
+        }
+
+    .column8 {
+        display: none;
+    }
+
+    .login-part4 {
+        border-right: 3px solid #fb9905;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+    }
+
+        .login-part4::before {
+            display: none;
+        }
+
+        .login-part4::after {
+            display: none;
+        }
+
+    .login-welcome-text {
+        display: block;
+    }
+
+    .cLocation {
+        float: left;
+    }
+
+    .addrs {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .cLocationBox {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .lRequestCol {
+        text-align: center;
+    }
+
+    .contactFilter {
+        float: left;
+    }
+
+    .hSpan {
+        display: block;
+    }
+
+    .contactFilter {
+        max-width: 100%;
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+    .contactBoxImage {
+        max-width: 30%;
+    }
+
+    .contactBoxHeader {
+        text-align: center;
+    }
+
+    .contactBoxName {
+        padding-top: 9%;
+    }
+
+    .pInfoCol {
+        padding-left: 15px;
+    }
+
+        .pInfoCol th, .pInfoCol td {
+            font-size: 14px;
+        }
+
+    .landingBox_warper {
+        padding-top: 15px !important;
+    }
+
+    .DB_Profile_box {
+        margin-bottom: 0px;
+    }
+
+    .label-duty {
+        font-size: 13px;
+    }
+
+    .approval_box {
+        margin-top: 15px;
+    }
+
+    .tableRegDetail {
+        margin-top: 30px;
+    }
+
+    .fc-left {
+        margin-bottom: 10px;
+    }
+
+    .tableRegDetail td, .tableRegDetail th {
+        white-space: nowrap;
+    }
+
+    .regAprvlBox {
+        margin-top: 15px;
+    }
+
+    .atndncSmry {
+        margin-top: 15px;
+    }
+
+    .contactWraper {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .DB_Profile_Contact {
+        border: 0px;
+        border-top: 1px solid #bababa;
+        padding-top: 15px;
+    }
+
+    .profile-info .emp_Desig {
+        padding-top: 0px;
+    }
+
+    .profile-img {
+        width: 15%;
+    }
+
+    .profile-info {
+        width: 85%;
+    }
+
+        .profile-info .emp_Name {
+            border-bottom: 0px;
+        }
+
+    .DB_Profile_Contact-col {
+        padding-left: 15px !important;
+    }
+
+    .DB_Profile_Contact li {
+        padding-left: 0px;
+    }
+
+    .profile-card {
+        padding-bottom: 15px;
+    }
+
+    .NavbarTop {
+        display: block;
+    }
+
+    .btn-attendance, .btn-logout {
+        float: right;
+    }
+
+    .btn-attendance {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .NavbarTop .navbar-toggler {
+        display: none;
+    }
+
+    .column8 .centered h2 {
+        font-size: 25px;
+    }
+
+    .cLocation {
+        float: left;
+    }
+
+    .cLocationBox {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .lRequestCol {
+        text-align: left;
+    }
+
+    .leave-type-list {
+        margin-bottom: 10px;
+    }
+
+    .contactFilter {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .pInfoCol {
+        padding-left: 15px;
+    }
+
+        .pInfoCol th, .pInfoCol td {
+            font-size: 14px;
+        }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .cLocation {
+        float: left;
+    }
+
+    .cLocationBox {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .lRequestCol {
+        text-align: left;
+    }
+
+    .leave-type-list {
+        margin-bottom: 10px;
+    }
+
+    .contactFilter {
+        min-width: 400px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .MobNav {
+        display: none !important;
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+}
+
+.btn-attendance, .btn-logout {
+    float: right;
+}
+
+.btn-attendance {
+    margin-left: 10px;
+    margin-right: 0px;
+}

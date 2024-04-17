@@ -1,0 +1,251 @@
+﻿@model Attendance.Domain.Models.Attendance.AttendanceSummary
+
+@{
+    ViewData["Title"] = "Regularization";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.css">
+
+@*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.css" />*@
+
+
+<!-- qTip -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css" />
+
+<!-- Full Calendar -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/fullcalendar.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/fullcalendar.print.css" media="print" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<style>
+    .fc-day-today {
+        background-color: inherit !important;
+    }
+
+    a.fc-day-number {
+        width: 18px;
+        text-align: right;
+        position: absolute;
+        top: 60px;
+        margin-left: 100px;
+    }
+</style>
+
+<div class="container-fluid main-wraper" id="testPartial">
+
+    <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Make Your Regularization</h5>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12">
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Date</span>
+                            </div>
+                            <input type="text" class="form-control" id="txtselectdate" value="" disabled>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs rglrTab" id="myTab" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" id="inTime-tab" data-toggle="tab" href="#inTime" role="tab" aria-controls="inTime" aria-selected="true" onclick="selectedtab(1)">InTime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="outTime-tab" data-toggle="tab" href="#outTime" role="tab" aria-controls="outTime" aria-selected="false" onclick="selectedtab(2)">OutTime</a>
+                        </li>
+                    </ul>
+                   @* <div class="col-12">
+                        <div class="form-group input-group">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" id="txtselectdate" value="">
+
+                    </div>*@
+                    <div class="tab-content rglrTabContent" id="myTabContent">
+                        <div class="tab-pane fade show active" id="inTime" role="tabpanel" aria-labelledby="inTime-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">InTime</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="txtintime" value="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Revised InTime</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="HH:MM" name="" id="txtintimeR" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-0 input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Remark</span>
+                                        </div>
+                                        <select class="form-control" id="ddlintimeR">
+                                            <option selected>Select a suitable reason</option>
+                                            <option value="1">No Network in App</option>
+                                            <option value="2">Problem in mobile</option>
+                                            <option value="3">Traffic proble</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade pt-2" id="outTime" role="tabpanel" aria-labelledby="outTime-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">OutTime</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="txtouttime" value="">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Revised OutTime</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="HH:MM" name="" id="txtouttimeR" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-0 input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Remark</span>
+                                        </div>
+                                        <select class="form-control" id="ddlouttimeR">
+                                            <option selected>Select a suitable reason</option>
+                                            <option value="1">No Network in App</option>
+                                            <option value="2">Problem in mobile</option>
+                                            <option value="3">Traffic proble</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light d-block text-left">
+
+                    <input type="hidden" id="dateHidden" />
+                     <input type="hidden" id="HiddenID" />
+                    <input type="hidden" id="IntimeHidden" />
+                    <input type="hidden" id="OutHidden" />
+
+                    <button type="button" class="btn btn-sm btn-danger closeModal" data-dismiss="modal" onclick="closeModal()">Close</button>
+                    <button type="button" class="btn btn-sm btn-success" id="btnsave">Save</button>
+                    <span class="text-success" id="msgsuccess" style="float:right"></span>
+                    <span class="text-danger" id="msgerror" style="float:right"></span>
+                    <span id="spanmsg" style="float:right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shadow-box DB_Leave_box p-0" id="divContainer">
+        <h5 class="bg-blue p-2 text-white">Regularization</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="partilaView">
+                    <div class="mt-0 mb-3 calendarDesign" id="calendar">
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-danger mr-1"></span>Regulazation Required
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-warning mr-1"></span>Sent for Regulazation
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-success mr-1"></span>Attendance OK
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-primary mr-1"></span>On Office Duty
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-darken-1 mr-1"></span>Attendance Regularised
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-1 small font-weight-bold">
+                            <span class="px-2 rounded bg-orange mr-1"></span>Attendance Mark
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-2">
+                    <div class="table-responsive tableRegDetail">
+                        <table class="table table-dflt text-left table-bordered table-striped table-sm">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">Total Days</td>
+                                    <td>@Model.TotalDays</td>
+                                </tr>
+                                <tr>
+                                    <td>Remaining</td>
+                                    <td>@Model.RemainingDays</td>
+                                </tr>
+                                <tr>
+                                    <td>Present Days</td>
+                                    <td>@Model.PresentDays</td>
+                                </tr>
+                                <tr>
+                                    <td>Week Offs</td>
+                                    <td>@Model.WeekOff</td>
+                                </tr>
+                                <tr>
+                                    <td>Public Holidays</td>
+                                    <td>@Model.PublicHolidays</td>
+                                </tr>
+                                <tr>
+                                    <td>Paid Leaves</td>
+                                    <td>@Model.PL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section layoutjs
+    {
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src='https://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+    <script src='https://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+    <script src="https://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>
+    <script src='https://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
+    <script src="https://weareoutman.github.io/clockpicker/dist/jquery-clockpicker.min.js"></script>
+
+    <!-- qTip -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="~/js/dashboard/attendance/regulazation.js"></script>
+}

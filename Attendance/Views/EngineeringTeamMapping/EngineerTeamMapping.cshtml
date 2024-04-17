@@ -1,0 +1,79 @@
+﻿@model Attendance.Domain.Models.EngineeringTeamMapping.EmployeeApproveUnapprove
+@{
+    ViewData["Title"] = "EngineerTeamMapping";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row page-heading-row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1 class="page-heading">Engineer Team Mapping</h1>
+    </div>
+</div>
+<div class="row mb-2">
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="form-group">
+            <label class="label-dflt">Company</label>
+            @Html.DropDownListFor(m => m.CompanyID, new SelectList(ViewBag.Company, "CompanyEncrpytId", "CompanyName"), "Select Company", new { @Class = "form-control" })
+           @*@Html.DropDownListFor(m => m.CompanyID,new SelectList(ViewBag.Company,"CompanyEncryptId","CompanyName"),"Select Company",new{ @Class = "form-control"});
+       </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="form-group">
+            <label class="label-dflt">Vendor</label>
+            <select id="VendorID" name="VendorID" Class="form-control" ,disabled="true"></select>@*onchange="BindEmployeeDetailForApprovelAdmin()"*@
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="form-group">
+            <label class="label-dflt">Select Project</label>
+            <select id="ProjectID" name="ProjectID" Class="form-control" ,disabled="true"></select>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="form-group">
+            <label class="label-dflt">Employee</label>
+            <select id="EmpID" name="EmpID" Class="form-control" ,disabled="true"></select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="search-strip">
+            <ul class="search-box d-flex">
+                <li class="flex-grow-1"><input type="text" placeholder="Search.." class="form-control" id="searchData"></li>
+                <li><button type="button" class="btn btnGrey"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+            </ul>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover master-table table-bordered" id="tblEmpList">
+                <thead class="table-light-head">
+                    <tr>
+                        <th width="50px">S no.</th>
+                        <th>Employee Name</th>
+                        <th>Employee Id</th>
+                        <th>Designation</th>
+                        <th>Status</th>
+                        <th width="50px"><input type="checkbox" name="" disabled="disabled" class="EmplAppchk"></th>
+                    </tr>
+                </thead>
+
+                <tbody id="Employeelist">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2 text-right">
+    <span id="spanMessage" class="text-success"></span>
+    <button type="button" class="btn btn-info btn-sm" onclick="SaveAllCheckbox(0,event)" style="min-width:100px;">Free</button>
+    <button type="button" class="btn btn-info btn-sm" onclick="SaveAllCheckbox(1,event)" style="min-width:100px;">Save</button>
+</div>
+
+
+@section layoutjs
+{
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/EngineerigTeamMapping/EngineeringTeamMapping.js"></script>
+}

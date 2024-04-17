@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Attendance
+build_property.RootNamespace = Attendance
+build_property.ProjectDir = E:\Attendance Satish 12-10-2023\Attendance\Attendance\Attendance\Attendance\Attendance\Attendance\Attendance\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = E:\Attendance Satish 12-10-2023\Attendance\Attendance\Attendance\Attendance\Attendance\Attendance\Attendance
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Account/adduser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxhZGR1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/AttendanceApproval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlQXBwcm92YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/AttendanceDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/AttendanceHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/AttendanceMark.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlTWFyay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/AttendanceSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/Regularization.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxSZWd1bGFyaXphdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Attendance/RegulazationApproval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxSZWd1bGF6YXRpb25BcHByb3ZhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/EngineeringTeamMapping/EngineerTeamMapping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lZXJpbmdUZWFtTWFwcGluZ1xFbmdpbmVlclRlYW1NYXBwaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Holiday/Holiday.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9saWRheVxIb2xpZGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Holiday/HolidayList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9saWRheVxIb2xpZGF5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Holiday/HolidayMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9saWRheVxIb2xpZGF5TWFzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Holiday/MasterHoliday.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9saWRheVxNYXN0ZXJIb2xpZGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Infra/Infra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFcSW5mcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Infra/InfraDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFcSW5mcmFEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Leave/Leave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVcTGVhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Leave/LeaveApproval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVcTGVhdmVBcHByb3ZhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Leave/LeaveMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVcTGVhdmVNYXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Leave/LeaveReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVcTGVhdmVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Reimbursement/AccountReimbursement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVpbWJ1cnNlbWVudFxBY2NvdW50UmVpbWJ1cnNlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Reimbursement/PaidReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVpbWJ1cnNlbWVudFxQYWlkUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Reimbursement/Reimbursement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVpbWJ1cnNlbWVudFxSZWltYnVyc2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Reimbursement/ReimbursementHeadApproval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVpbWJ1cnNlbWVudFxSZWltYnVyc2VtZW50SGVhZEFwcHJvdmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Shared/_HorizantalLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3JpemFudGFsTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/User/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Attendance Satish 12-10-2023/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Attendance/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

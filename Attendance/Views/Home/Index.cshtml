@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="~/Content/Images/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />*@
+@*<link href="~/css/DashBoard/default.css" rel="stylesheet" type="text/css" />*@
+<link href="~/css/dashboard/default.css" rel="stylesheet" type="text/css" />
+<link href="~/css/dashboard/media.css" rel="stylesheet" />
+<link href="~/css/dashboard/style.css" rel="stylesheet" />
+
+
+<div class="container-fluid main-wraper">
+    <div class="shadow-box landingBox_warper pt-5">
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="landingBox">
+                    <div class="landingBox-header">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="landingBox-btm">
+                        <p>Attendance</p>
+                        <a href="~/Attendance/AttendanceMark" class="btn btn-sm btn-vilot">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="landingBox">
+                    <div class="landingBox-header">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="landingBox-btm">
+                        <p>Leaves</p>
+                        <a href="~/Leave/Leave" class="btn btn-sm btn-vilot">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="landingBox">
+                    <div class="landingBox-header">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+                    <div class="landingBox-btm">
+                        <p>My Infra</p>
+                        <a href="~/Infra/InfraDetails" class="btn btn-sm btn-vilot">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="landingBox">
+                    <div class="landingBox-header">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="landingBox-btm">
+                        <p>Regularization</p>
+                        <a href="~/Attendance/Regularization" class="btn btn-sm btn-vilot">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-box DB_Event_box">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 col-sm-6 col-md-6 col-xs-12">
+                <div class="Event_box_wraper">
+                    <div class="activity-boxes box-1">
+                        <span class="activity-box-icon">
+                            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                        </span>
+                        <div class="event-name">Birthday</div>
+                        <div class="activity-box-title">24 OCT</div>
+                    </div>
+                    <div class="activity-box-btm">
+                        <a href="#" class="btn btn-sm btn-vilot">View Calendar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-sm-6 col-md-6 col-xs-12">
+                <div class="Event_box_wraper">
+                    <div class="activity-boxes box-1">
+                        <span class="activity-box-icon">
+                            <i class="fa fa-beer" aria-hidden="true"></i>
+                        </span>
+                        <div class="event-name">Upcoming Holidays</div>
+                        <div class="activity-box-title">24 OCT | 31 DEC</div>
+                    </div>
+                    <div class="activity-box-btm">
+                        <a href="~/Holiday/Index" class="btn btn-sm btn-vilot">View Calendar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-sm-6 col-md-6 col-xs-12">
+                <div class="Event_box_wraper">
+                    <div class="activity-boxes box-1">
+                        <span class="activity-box-icon">
+                            <i class="fa fa-android" aria-hidden="true"></i>
+                        </span>
+                        <div class="event-name">Get Application</div>
+                        <div class="activity-box-title">Android App</div>
+                    </div>
+                    <div class="activity-box-btm">
+                        <a href="#" class="btn btn-sm btn-vilot">Get Application</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-sm-6 col-md-6 col-xs-12">
+                <div class="Event_box_wraper">
+                    <div class="activity-boxes box-1">
+                        <span class="activity-box-icon">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </span>
+                        <div class="event-name">Contacts</div>
+                        <div class="activity-box-title">18 Contacts</div>
+                    </div>
+                    <div class="activity-box-btm">
+                        <a href="~/Contact/Index" class="btn btn-sm btn-vilot">View Contacts</a>
+                    </div>
+                </div>
+            </div>
+           @* <div class="col-lg-4 col-xl-3 col-sm-6 col-md-6 col-xs-12">
+                <div class="Event_box_wraper">
+                    <div class="activity-boxes box-1">
+                        <span class="activity-box-icon">
+                            <i class="fa fa-rupee" aria-hidden="true"></i>
+                        </span>
+                        <div class="event-name">Earnings</div>
+                        <div class="activity-box-title">Last Month Earnings</div>
+                    </div>
+                    <div class="activity-box-btm">
+                        <a href="~/Earning/Index" class="btn btn-sm btn-vilot">View Earnings</a>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </div>
+</div>
+@*<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+
+
+
+

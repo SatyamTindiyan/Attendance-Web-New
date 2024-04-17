@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Account\Style.css" />
+    <Content Remove="wwwroot\css\DashBoard\birthday-style.css" />
+    <Content Remove="wwwroot\css\DashBoard\default.css" />
+    <Content Remove="wwwroot\css\DashBoard\media.css" />
+    <Content Remove="wwwroot\css\DashBoard\Style.css" />
+    <Content Remove="wwwroot\css\Style.css" />
+    <Content Remove="wwwroot\Images\10.jpg" />
+    <Content Remove="wwwroot\Images\a.jpg" />
+    <Content Remove="wwwroot\Images\b.jpg" />
+    <Content Remove="wwwroot\Images\Dashboard\10.jpg" />
+    <Content Remove="wwwroot\Images\Dashboard\67-672417_happy-birthday-png-birthday-wishes-for-kids-happy.png" />
+    <Content Remove="wwwroot\Images\Dashboard\birthaday-image-1.png" />
+    <Content Remove="wwwroot\Images\Dashboard\depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" />
+    <Content Remove="wwwroot\Images\Dashboard\favicon-16x16.png" />
+    <Content Remove="wwwroot\Images\Dashboard\laptop.jpg" />
+    <Content Remove="wwwroot\Images\Dashboard\login-bg.png" />
+    <Content Remove="wwwroot\Images\Dashboard\pp.jpg" />
+    <Content Remove="wwwroot\Images\Dashboard\profile.png" />
+    <Content Remove="wwwroot\Images\favicon-16x16.png" />
+    <Content Remove="wwwroot\Images\laptop.jpg" />
+    <Content Remove="wwwroot\Images\login-bg.png" />
+    <Content Remove="wwwroot\Images\no-image.jpg" />
+    <Content Remove="wwwroot\js\Account\Account.js" />
+    <Content Remove="wwwroot\js\Account\Profile.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance.ApplicationCore\Attendance.ApplicationCore.csproj" />
+    <ProjectReference Include="..\Attendance.Infrastructure.Data\Attendance.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Attendance.Infrastructure.loc\Attendance.Infrastructure.loc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.2.3" />
+    <PackageReference Include="EPPlus" Version="7.1.1" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="Google.DataTable.Net.Wrapper" Version="4.1.0" />
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="jQuery" Version="3.6.4" />
+    <PackageReference Include="jquery.datatables" Version="1.10.15" />
+    <PackageReference Include="LinqToExcel" Version="1.11.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\theme\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="wwwroot\Excelfile\" />
+    <Folder Include="wwwroot\themes\base\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Account\Style.css" />
+    <None Include="wwwroot\css\DashBoard\birthday-style.css" />
+    <None Include="wwwroot\css\DashBoard\default.css" />
+    <None Include="wwwroot\css\DashBoard\media.css" />
+    <None Include="wwwroot\css\DashBoard\Style.css" />
+    <None Include="wwwroot\css\Style.css" />
+    <None Include="wwwroot\Images\10.jpg" />
+    <None Include="wwwroot\Images\a.jpg" />
+    <None Include="wwwroot\Images\b.jpg" />
+    <None Include="wwwroot\Images\Dashboard\10.jpg" />
+    <None Include="wwwroot\Images\Dashboard\67-672417_happy-birthday-png-birthday-wishes-for-kids-happy.png" />
+    <None Include="wwwroot\Images\Dashboard\birthaday-image-1.png" />
+    <None Include="wwwroot\Images\Dashboard\depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" />
+    <None Include="wwwroot\Images\Dashboard\favicon-16x16.png" />
+    <None Include="wwwroot\Images\Dashboard\laptop.jpg" />
+    <None Include="wwwroot\Images\Dashboard\login-bg.png" />
+    <None Include="wwwroot\Images\Dashboard\pp.jpg" />
+    <None Include="wwwroot\Images\Dashboard\profile.png" />
+    <None Include="wwwroot\Images\favicon-16x16.png" />
+    <None Include="wwwroot\Images\laptop.jpg" />
+    <None Include="wwwroot\Images\login-bg.png" />
+    <None Include="wwwroot\Images\no-image.jpg" />
+    <None Include="wwwroot\js\Account\Account.js" />
+    <None Include="wwwroot\js\Account\Profile.js" />
+  </ItemGroup>
+
+</Project>

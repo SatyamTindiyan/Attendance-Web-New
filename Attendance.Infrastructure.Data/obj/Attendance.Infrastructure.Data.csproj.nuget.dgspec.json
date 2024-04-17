@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Infrastructure.Data\\Attendance.Infrastructure.Data.csproj": {}
+  },
+  "projects": {
+    "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\Attendance.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\Attendance.Domain.csproj",
+        "projectName": "Attendance.Domain",
+        "projectPath": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\Attendance.Domain.csproj",
+        "packagesPath": "C:\\Users\\LQT676\\.nuget\\packages\\",
+        "outputPath": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LQT676\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Infrastructure.Data\\Attendance.Infrastructure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Infrastructure.Data\\Attendance.Infrastructure.Data.csproj",
+        "projectName": "Attendance.Infrastructure.Data",
+        "projectPath": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Infrastructure.Data\\Attendance.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\LQT676\\.nuget\\packages\\",
+        "outputPath": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Infrastructure.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LQT676\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\Attendance.Domain.csproj": {
+                "projectPath": "E:\\Attendance Satish 12-10-2023\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance\\Attendance.Domain\\Attendance.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

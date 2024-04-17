@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewData["Title"] = "RegulazationApproval";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+@*<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />*@
+
+@{
+    var userr = @ViewBag.GetData;
+    if (userr != null)
+    {
+        <input type="hidden" value="@userr.Approvallevel" id="myHiddenVar" />
+
+    }
+}
+
+<div class="container-fluid regAprvlBox">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Regularization Approval</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="From" autocomplete="off" name="" id="txtfromdate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="To" autocomplete="off" name="" id="txttodate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <input type="button" class="btn btn-sm btn-orange" name="" value="Search" id="btnSearch" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"></div>
+                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <input type="text" class="form-control" placeholder="Search here..." name="" id="searchData">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table table-dflt text-left table-bordered table-striped table-sm" id="tblRegapproval">
+                            <thead>
+                                <tr>
+                                    <th>Emp Name</th>
+                                    <th>Emp Id</th>
+                                    <th>Date</th>
+                                    <th>InTime</th>
+                                    <th>OutTime</th>
+                                    <th>Working Hours</th>
+                                    @*@if (ViewBag.GetData.Approvallevel == 2)
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Cordinator</label>
+                                            <input type="checkbox" id="ckbCheckAll" />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }
+                                    else
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Cordinator</label>
+                                            <input type="checkbox" id="ckbCheckAll" disabled />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }*@
+                                    @if (ViewBag.GetData.Approvallevel == 3)
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Manager</label>
+                                            <input type="checkbox" id="ckbCheckAllOne" />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }
+                                    else
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Manager</label>
+                                            <input type="checkbox" id="ckbCheckAllOne" disabled />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }
+                                    @if (ViewBag.GetData.Approvallevel == 4)
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Head</label>
+                                            <input type="checkbox" id="ckbCheckAllTwo" />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }
+                                    else
+                                    {
+                                        <th data-orderable="false">
+                                            <label>Head</label>
+                                            <input type="checkbox" id="ckbCheckAllTwo" disabled />
+                                            <label for="ckbCheckAll">Select All</label>
+                                        </th>
+                                    }
+
+                                </tr>
+                            </thead>
+                            <tbody id="tblRegapprovalth">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="row mt-2">
+            <div class="col-12 text-left">
+
+            <button class="btn btn-sm btn-orange" id="btnregapproval">Submit</button>
+            </div>
+            <div class="col-12 text-right">
+            <span class="label label-success" id="msgSuccess"></span>
+            <span class="label label-danger" id="msgError"></span>
+            <button class="btn btn-sm btn-orange" id="btnregapproval">Submit</button>
+            </div>
+            </div>*@
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-12 text-right">
+            <span class="label label-success" id="msgSuccess"></span>
+            <span class="label label-danger" id="msgError"></span>
+            <button class="btn btn-sm btn-orange" id="btnregapproval">Submit</button>
+        </div>
+    </div>
+</div>
+
+@section layoutjs
+    {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/Dashboard/Attendance/RegulazationApproval.js"></script>
+
+}
+

@@ -1,0 +1,282 @@
+﻿@using Attendance.Domain.Models.UserDetail
+@using Newtonsoft.Json
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>@ViewBag.Title - Attendance</title>
+
+    <link rel="icon" type="image/x-icon" href="~/Images/favicon-16x16.png" />
+    @* <link href="~/css/datatable/jquery.datatables.css" rel="stylesheet" />
+    <link href="~/css/datatable/jquery.datatables.min.css" rel="stylesheet" />*@
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    @*    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />*@
+    <link href="~/js/DateTimePick/DateTimePicker.css" rel="stylesheet" />
+    <link href="~/css/dashboard/style.css" rel="stylesheet" />
+    <link href="~/css/dashboard/media.css" rel="stylesheet" />
+    <link href="~/css/dashboard/default.css" rel="stylesheet" />
+    <link href="~/css/dashboard/birthday-style.css" rel="stylesheet" />
+    <!--Time Picker-->
+    @*<link rel="stylesheet" href="~/css/DashBoard"/>*@
+
+    @RenderSection("LayoutCSS" , required:false)
+</head>
+<body>
+    @{
+        //var userr = (Attendance.Domain.Models.UserDetail.UserProfile)TempData.Peek("userprofile");//(Attendance.Domain.Models.UserDetail.UserProfile)TempData.Peek("userprofile");
+        var userProfileJson = TempData["userprofile"] as string;
+        TempData.Keep("userprofile");
+        if (!string.IsNullOrEmpty(userProfileJson))
+        {
+
+            var userProfile = JsonConvert.DeserializeObject<UserProfile>(userProfileJson);
+
+            <section id="clouds" class="birthday-wish-section d-none">
+                <div class="Blittle BC-2"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="Blittle BC-8"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="BlittleUP BC-3"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="BlittleUP BC-6"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="Bmedium BC-1"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="Bmedium BC-3"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="BmediumUP BC-4"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="BmediumUP BC-8"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="BmediumUPUP BC-4"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="Bbig BC-5"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+                <div class="Bbig BC-7"><img src="~/Images/Dashboard/birthaday-image-1.png" alt="balloon"></div>
+
+            </section>
+
+            <div id="mySidenav" class="sidenav openNav d-sm-none d-md-block">
+                <a href="javascript:void(0)" class="closebt" onclick="NavToggleFunction()">&#9776;</a>
+                <div class="profile-box">
+                    <img src="~/Images/Dashboard/profile.png" class="img-fluid profile-image img-circle">
+                    <div class="profile-name">
+                    </div>
+                    <a href="/User/ViewProfile" class="btn btn-xs btn-orange" style="font-size: 13px;">View Profile</a>
+                </div>
+                <ul class="side-menu">
+                    <li class="active">
+                        <a href="../Home/Index"> <i class="fa fa-tachometer"></i><span class="menu-text">Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="../Infra/Infra"><i class="fa fa-laptop"></i><span class="menu-text">My Infras</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-id-card-o"></i><span class="menu-text">Attendance</span></a>
+                        <div class="dropdown-menu dark-dd" aria-labelledby="dropdownMenu3">
+                            @Html.ActionLink("Mark Attendance", "AttendanceMark", "Attendance")
+                            @Html.ActionLink("Attendance History", "AttendanceHistory", "Attendance")
+                            @Html.ActionLink("Attendance Approval", "AttendanceApproval", "Attendance")
+                            @Html.ActionLink("Regularization Approval", "RegulazationApproval", "Attendance")
+                            @Html.ActionLink("Regularization", "Regularization", "Attendance")
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-circle-o"></i><span class="menu-text">Leaves</span></a>
+                        <div class="dropdown-menu dark-dd" aria-labelledby="dropdownMenu5">
+                            <a href="../Leave/Leave" class="dropdown-item">Leaves</a>
+                            <a href="../Leave/LeaveMaster" class="dropdown-item">Leave Master</a>
+                            <a href="../Leave/LeaveApproval" class="dropdown-item">Leave Approval</a>
+                            <a href="../Leave/LeaveReport" class="dropdown-item">Leave Report</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" type="button" id="dropdownHRS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building" aria-hidden="true"></i><span class="menu-text">Human Resource</span></a>
+                        <div class="dropdown-menu dark-dd" aria-labelledby="dropdownHRS">
+                            <a href="../Attendance/AttendanceDetail" class="dropdown-item">Attendance Details</a>
+                            <a href="../Attendance/AttendanceSummary" class="dropdown-item">Attendance Summary</a>
+                            @* <a href="../EngineeringTeamMapping/EngineerTeamMapping" class="dropdown-item">Engineering Team Mapping</a>*@
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-id-card-o"></i><span class="menu-text">Holiday</span></a>
+                        <div class="dropdown-menu dark-dd" aria-labelledby="dropdownHRS">
+                            @* <a href="../Holiday/Holiday" class="dropdown-item"><i class="fa fa-calendar"></i><span class="menu-text">Holiday Calendar</span></a>*@
+                            <a href="../Holiday/HolidayMaster" class="dropdown-item"><i class="fa fa-calendar"></i><span class="menu-text">Holiday Master</span></a>
+                            <a href="../Holiday/MasterHoliday" class="dropdown-item"><i class="fa fa-calendar"></i><span class="menu-text">Master Holiday</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-id-card-o"></i><span class="menu-text">Earning</span></a>
+                        <div class="dropdown-menu dark-dd" aria-labelledby="dropdownHRS">
+                            <a href="../Reimbursement/Reimbursement"><i class="fa fa-money"></i><span class="menu-text">Reimbursement</span></a>
+                            <a href="../Reimbursement/ReimbursementHeadApproval"><i class="fa fa-money"></i><span class="menu-text">Reimbursement Approval</span></a>
+                            @* <a href="../Reimbursement/AccountReimbursement"><i class="fa fa-money"></i><span class="menu-text">Finance</span></a>*@
+                            @*<a href="../Reimbursement/ReimbursementMobile"><i class="fa fa-money"></i><span class="menu-text">Reimbursement</span></a>
+                    <a href="../Reimbursement/ReimbursementHeadApprovalMobile"><i class="fa fa-money"></i><span class="menu-text">Reimbursement Approval</span></a>*@
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="main" class="mainSlide">
+                <nav class="navbar navbar-expand-lg navbar-dark NavbarTop">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="nav-link btn btn-sm btn-orange btn-attendance" href="../Attendance/AttendanceMark"><i class="fa fa-check mr-1" aria-hidden="true"></i>Mark Attendance</a>
+                    <a class="nav-link btn btn-sm btn-orange btn-logout" href="@Url.Action("Login","Account")"><i class="fa fa-power-off mr-1" aria-hidden="true"></i>Logout</a>
+                    <div class="collapse MobNav navbar-collapse" id="navbarTogglerDemo01">
+
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Home/Index">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Infra/Infra">My Infras</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" type="button" id="dropdownMenuAtndnc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attendance</a>
+                                <div class="dropdown-menu dark-dd" aria-labelledby="dropdownMenuAtndnc">
+                                    <a href="../Attendance/AttendanceMark" class="dropdown-item">Attendance Mark</a>
+                                    <a href="../Attendance/AttendanceHistory" class="dropdown-item">Attendance History</a>
+                                    <a href="../Attendance/AttendanceApproval" class="dropdown-item">Attendance Approval</a>
+                                    <a href="../Attendance/Regularization" class="dropdown-item">Regularization</a>
+                                    <a href="../Attendance/RegulazationApproval" class="dropdown-item">RegularizationApproval</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" type="button" id="dropdownMenuHr" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Human Resource</a>
+                                <div class="dropdown-menu dark-dd" aria-labelledby="dropdownMenuHr">
+                                    <a href="../Attendance/AttendanceDetail" class="dropdown-item">Attendance Details</a>
+                                    <a href="../Attendance/AttendanceSummary" class="dropdown-item">Attendance Summary</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Leave/Index">Leaves</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Contact/Index">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Holiday/Index">Calendar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Reimbursement/ReimbursementMobile">Earnings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Support/Index">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid pBoxContainer main-wraper">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="shadow-box DB_Profile_box">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-xl-8 col-md-12 col-sm-12 col-xs-12 pr-0 profile-card-col">
+                                        <div class="profile-card clearfix">
+                                            <div class="profile-img">
+                                                <img src="~/Images/Dashboard/profile.png" class="img-fluid">
+                                            </div>
+                                            <div class="profile-info">
+                                                <p class="emp_Name">@userProfile.EMP_Full_Name (@userProfile.EMP_ID)</p>
+                                                <p class="emp_Desig">@userProfile.Designation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-4 col-md-12 col-sm-12 col-xs-12 pl-0 DB_Profile_Contact-col">
+                                        <ul class="DB_Profile_Contact">
+                                            <li><i class="fa fa-envelope mr-1"></i>@userProfile.OfficialMail</li>
+                                            <li><i class="fa fa-phone mr-1"></i><span class="mr-1" style="min-width:100px; display:inline-block;">@userProfile.ContactNo </span><strong style="width:70px; display:inline-block" class="bg-secondary text-white px-1 small border">Personal</strong></li>
+                                            <li><i class="fa fa-phone mr-1"></i><span class="mr-1" style="min-width: 100px; display: inline-block;">@userProfile.EmergencyContNo</span><strong style="width: 70px; display: inline-block;" class="bg-secondary text-white px-1 small border">Emergency</strong></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-content p-0">
+                    @RenderBody()
+                </div>
+            </div>
+
+            <!-- Timepicker -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+            //<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                //<script src="~/lib/jquery/dist/jquery.min.js"></script>
+                //<script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            <script src="~/js/DateTimePick/DateTimePicker.js"></script>
+            <script src="~/js/DateTimePick/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript">
+                (function () {
+
+                    const idleDurationSecs = 300;    // X number of seconds
+                    const redirectUrl = '../Account/Login';  // Redirect idle users to this URL
+                    let idleTimeout; // variable to hold the timeout, do not modify
+
+                    const resetIdleTimeout = function () {
+
+                        // Clears the existing timeout
+                        if (idleTimeout) clearTimeout(idleTimeout);
+
+                        // Set a new idle timeout to load the redirectUrl after idleDurationSecs
+                        idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+                    };
+
+                    // Init on page load
+                    resetIdleTimeout();
+
+                    // Reset the idle timeout on any of the events listed below
+                    ['click', 'touchstart', 'mousemove'].forEach(evt =>
+                        document.addEventListener(evt, resetIdleTimeout, false)
+                    );
+
+                })();
+            </script>
+            <script>
+                function NavToggleFunction() {
+
+                    var element = document.getElementById("mySideNav");
+                    element.classList.toggle("openNav");
+
+                    var element = document.getElementById("main");
+                    element.classList.toggle("mainSlide");
+                }
+
+            </script>
+            <script type="text/javascript">
+                $(function () {
+
+                    $(".progress").each(function () {
+
+                        var value = $(this).attr('data-value');
+                        var left = $(this).find('.progress-left .progress-bar');
+                        var right = $(this).find('.progress-right .progress-bar');
+
+                        if (value > 0) {
+                            if (value <= 50) {
+                                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+                            } else {
+                                right.css('transform', 'rotate(180deg)')
+                                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+                            }
+                        }
+
+                    })
+
+                    function percentageToDegrees(percentage) {
+
+                        return percentage / 100 * 360
+                    }
+                });
+
+            </script>
+
+        }
+    }
+
+    @RenderSection("layoutjs", required: false)
+</body>
+</html>

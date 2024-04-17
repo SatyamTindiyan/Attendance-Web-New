@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "AttendanceApproval";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+@*<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />*@
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />
+
+
+@{
+    var userr =@ViewBag.GetData;
+    if (userr != null)
+    {
+        <input type="hidden" value="@userr.Approvallevel" id="myHiddenVar" />
+
+    }
+}
+<style>
+    div.pager {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+        div.pager span {
+            display: inline-block;
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8;
+            text-align: center;
+            cursor: pointer;
+            background: #216aaf;
+            color: #fff;
+            margin-right: 0.5em;
+        }
+
+            div.pager span.active {
+                background: #e6f1fb;
+                color: #216aaf;
+            }
+</style>
+<div class="container-fluid">
+    <div class="shadow-box DB_Leave_box p-0">
+        <h5 class="bg-blue p-2 text-white">Attendance Approval</h5>
+        <div class="p-2">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="From" name="" autocomplete="off" id="txtfromdate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="To" name="" autocomplete="off" id="txttodate">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="input-group input-group-sm form-group">
+                        <input type="button" class="btn btn-sm btn-orange" name="" value="Search" id="btnSearch" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table text-left table-dflt table-bordered table-striped table-sm" id="tblapproval">
+                            <thead>
+                                <tr>
+                                    <th>Emp Name</th>
+                                    <th>Emp Id</th>
+                                    <th>Date</th>
+                                    <th>InTime</th>
+                                    <th>OutTime</th>
+                                    <th>In Dist.</th>
+                                    <th>Out Dist.</th>
+                                    <th>Working Hours</th>
+                                    @*@if (ViewBag.GetData.Approvallevel == 2)
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Cordinator
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" id="chkboxAll" />
+                                                </label>
+                                            </th>
+                                    }
+                                    else
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Cordinator
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" disabled id="chkboxAll" />
+                                                </label>
+                                            </th>
+                                    }*@
+
+                                    @if (ViewBag.GetData.Approvallevel == 3)
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Manager
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" id="ckbCheckAllOne" />
+                                                </label>
+                                            </th>
+                                    }
+                                    else
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Manager
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" disabled id="ckbCheckAllOne" />
+                                                </label>
+                                            </th>
+                                    }
+                                    @if (ViewBag.GetData.Approvallevel == 4)
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Head
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" id="ckbCheckAllTwo" />
+                                                </label>
+                                            </th>
+                                    }
+                                    else
+                                    {
+                                            <th data-orderable="false">
+                                                <label class="d-block">
+                                                    Head
+                                                    <label for="ckbCheckAll">Select All</label>
+                                                    <input type="checkbox" disabled id="ckbCheckAllTwo" />
+                                                </label>
+                                            </th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody id="tblAttendanceapproval">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-12 text-right">
+            <span class="label label-success" id="msgSuccess"></span>
+            <span class="label label-danger" id="msgError"></span>
+            <button class="btn btn-sm btn-orange" id="btnAttenapproval">Submit</button>
+
+        </div>
+    </div>
+</div>
+
+@section layoutjs
+    {
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+        <script  src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script src="~/js/Dashboard/Attendance/AttendanceApproval.js"></script>
+}
+
